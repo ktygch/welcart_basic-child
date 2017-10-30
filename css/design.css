@@ -2278,20 +2278,20 @@ header.entry-header {
     background-position: center center;
     background-size: contain; }
     .oliviaPalermo .logoarea h2.v {
-      margin: 0 auto 20px;
-      padding-top: 40px;
+      margin: 0 auto 11px;
+      padding-top: 35px;
       line-height: 40px;
       background-image: url(../image/svg/vianel_logo_blk.svg); }
     .oliviaPalermo .logoarea h2.op {
       margin: 0 auto;
-      padding-top: 40px;
-      line-height: 40px;
+      padding-top: 20px;
+      line-height: 30px;
       background-image: url(../image/vianel/op_logo.svg); }
   .oliviaPalermo .logoarea span {
     display: block;
-    width: 25px;
-    height: 25px;
-    margin: 10px auto 15px;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto 15px;
     position: relative; }
     .oliviaPalermo .logoarea span:before, .oliviaPalermo .logoarea span:after {
       content: "";

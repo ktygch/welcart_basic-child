@@ -29,7 +29,7 @@
 	<?php if(is_front_page()): ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
 	<?php endif; ?>
-	<?php if(is_category(array(12,13,14,15,16,309,332, 29,30))): ?>
+	<?php if(is_category(array(12,13,14,15,16,309,332,376, 29,30))): ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
 	<?php endif; ?>
 	

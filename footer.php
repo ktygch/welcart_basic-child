@@ -372,7 +372,7 @@
             });
         </script>
 	
-	<?php if(is_category(array(12,13,14,15,16,309,332, 29,30)) && !is_paged()): ?>
+	<?php if(is_category(array(12,13,14,15,16,309,332,376, 29,30)) && !is_paged()): ?>
         <script>
             $(document).ready(function(){
                 //各ブランドトップ　スライド　１頁目のみ読み込み
