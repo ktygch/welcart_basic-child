@@ -334,9 +334,9 @@
         <script src="<?php bloginfo('template_directory'); ?>-child/js/min/instafeed.js?<?php echo $timestamp; ?>"></script>
         */ ?>
         <?php if(is_mobile()): ?>
-            <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppageMobi.js?<?php echo $timestamp; ?>"></script>
+            <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppageMobi.min.js?<?php echo $timestamp; ?>"></script>
         <?php else: ?>
-            <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppage.js?<?php echo $timestamp; ?>"></script>
+            <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppage.min.js?<?php echo $timestamp; ?>"></script>
         <?php endif; ?>
 	<?php endif; ?>
 	

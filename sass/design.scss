@@ -2505,6 +2505,11 @@ header.entry-header{
     font: {
         size: 12px;
     }
+    dl{
+        dt{
+            font-weight: normal;
+        }
+    }
 }
 
 .youtube {
@@ -2526,7 +2531,8 @@ header.entry-header{
         margin-bottom: 40px;
         h2{
             display: block;
-            width: 300px;
+            width: auto;
+            max-width: 300px;
             height: 0;
             overflow: hidden;
             background: {
@@ -2571,6 +2577,14 @@ header.entry-header{
                 transform: rotate(-45deg);
             }
         }
+    }
+}
+
+.topic_each_olivia{
+    min-height: 380px;
+    padding: 0 5px;
+    @media (max-width: 767px){
+        min-height: 250px;
     }
 }
 //TOPICS 記事詳細ページ end

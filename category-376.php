@@ -14,27 +14,36 @@ get_header(); ?>
                     <div id="slider" class="slider-pro">
                         <div class="sp-slides">
                             <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/08/Olivia-02_trim.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8185.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8132.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8241.jpg" alt="" class="sp-image">
-                            </div>
-                            <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/09/Olivia-17_1024x1024.jpg" alt="" class="sp-image">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_264.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8199.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8224.jpg" alt="" class="sp-image">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_267.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8263.jpg" alt="" class="sp-image">
                             </div>
                             <?php if(!is_mobile()): ?>
                                 <?php /* PCのみ表示される */ ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/09/Olivia-17_1024x1024.jpg" alt="" class="sp-image">
+                                </div>
                             <?php else: ?>
                                 <?php /* mobi,tabletのみ表示される */ ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8258.jpg" alt="" class="sp-image">
+                                </div>
                             <?php endif; ?>
                         </div>
                     </div>

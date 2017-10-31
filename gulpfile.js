@@ -3,13 +3,25 @@ var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 var uglify = require("gulp-uglify");
 var plumber = require("gulp-plumber");
+var rename = require("gulp-rename");
 
 gulp.task("js", function(){
-	gulp.src(["js/**/*.js","!js/min/**/*.js","!js/bs/**/*.js"])
-		.pipe(plumber())
-		.pipe(uglify())
-		.pipe(gulp.dest("./js/min"))
+    gulp.src(["js/**/*.js","!js/min/**/*.js","!js/bs/**/*.js"])
+        .pipe(plumber())
+        .pipe(uglify())
+        .pipe(rename({extname: '.min.js'}))
+        .pipe(gulp.dest("./js/min"))
 });
+
+gulp.task("js", function(){
+    gulp.src(["js/**/*.js", "!js/min/**/*.js"])
+    .pipe(plumber())
+    .pipe(uglify())
+    .pipe(rename({extname: '.min.js'}))
+    .pipe(gulp.dest("./js/min"));
+});
+
+
 
 gulp.task("sass", function(){
 	gulp.src("sass/**/*.scss")

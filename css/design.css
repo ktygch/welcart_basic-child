@@ -2254,6 +2254,8 @@ header.entry-header {
   padding: 5px;
   line-height: 1.4em;
   font-size: 12px; }
+  .credit_area dl dt {
+    font-weight: normal; }
 
 .youtube {
   position: relative;
@@ -2271,7 +2273,8 @@ header.entry-header {
   margin-bottom: 40px; }
   .oliviaPalermo .logoarea h2 {
     display: block;
-    width: 300px;
+    width: auto;
+    max-width: 300px;
     height: 0;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -2309,6 +2312,13 @@ header.entry-header {
       right: 0;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
+
+.topic_each_olivia {
+  min-height: 380px;
+  padding: 0 5px; }
+  @media (max-width: 767px) {
+    .topic_each_olivia {
+      min-height: 250px; } }
 
 h1.cart_page_title {
   text-align: center;

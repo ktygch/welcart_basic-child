@@ -7,7 +7,7 @@ $(document).ready(function(){
 		width: "100%",
 		height: slideH,
 		slideDistance: 0,
-		slideAnimationDuration: 1000,//初期値700
+		slideAnimationDuration: 500,//初期値700
 		fade: true,
 		fadeDuration: 2500,//初期値500
 		autoplayDelay: 5000,//初期値5000
