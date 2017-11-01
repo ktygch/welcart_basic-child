@@ -304,7 +304,6 @@ header#masthead{
                         left: 0;
                         width: 100%;
                         box-sizing: border-box;
-                        //padding: 0 10px;
                         .mddInner{
                             height: 50px;
                             background: #000;
@@ -331,6 +330,43 @@ header#masthead{
                                 }
                             }
                         }
+                        
+                        .mddWrap2{
+                            display: block;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            width: 100%;
+                            box-sizing: border-box;
+                            .mddInner{
+                                height: 50px;
+                                background: #000;
+                                & > ul{
+                                    display: flex;
+                                    justify-content: space-around;
+                                    li{
+                                        a{
+                                            height: auto !important;
+                                            min-height: 50px !important;
+                                            box-sizing: border-box !important;
+                                            line-height: 50px !important;
+                                            margin: 0;
+                                            padding: 0 5px !important;
+                                            text-align: center;
+                                            color: #fff !important;
+                                            font: {
+                                                weight: lighter;
+                                            }
+                                            &:before{
+                                                bottom: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
                     }
                 }
             }
@@ -2532,7 +2568,10 @@ header.entry-header{
 .oliviaPalermo{
     .logoarea{
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        &.topic_head{
+            margin-top: 30px;
+        }
         h2{
             display: block;
             width: auto;
@@ -2588,7 +2627,7 @@ header.entry-header{
     min-height: 380px;
     padding: 0 5px;
     @media (max-width: 767px){
-        min-height: 250px;
+        min-height: 270px;
     }
 }
 //TOPICS 記事詳細ページ end

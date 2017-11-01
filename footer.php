@@ -391,6 +391,26 @@
         </script>
 	<?php endif; ?>
 	
+    <?php /*OLIVIAデビューTOPIC記事 本番 4984 テスト 1357*/ ?>
+    <?php if(is_single('4984')): ?>
+        <script>
+            $(document).ready(function(){
+                //各ブランドトップ　スライド　１頁目のみ読み込み
+                $( '#slider' ).sliderPro({
+                    width: "100%",
+                    height: 500,
+                    slideDistance: 0,
+                    slideAnimationDuration: 500,//初期値700
+                    fade: true,
+                    fadeDuration: 2500,//初期値500
+                    autoplayDelay: 5000,//初期値5000
+                    touchSwipe: true,
+                    buttons: false
+                });
+            });
+        </script>
+    <?php endif; ?>
+	
 	<?php /*↓本番カテIDは17,テストは20*/ ?>
     <?php if(in_category('17')): ?>
         <script src="<?php bloginfo('template_directory'); ?>-child/js/min/article.js"></script>

@@ -17,7 +17,7 @@ get_header(); ?>
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8328.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_272_w1500.jpg" alt="" class="sp-image">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/11/th_170029_poco8421.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8339.jpg" alt="" class="sp-image">

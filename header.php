@@ -33,6 +33,11 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
 	<?php endif; ?>
 	
+    <?php /*OLIVIAデビューTOPIC記事 本番 4984 テスト 1357*/ ?>
+	<?php if(is_single('4984')): ?>
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
+	<?php endif; ?>
+	
 	<?php wp_head(); ?>
    
     <?php /*amazon pay*/ ?>
@@ -163,7 +168,9 @@
                                         <div class="mddInner">
                                             <ul>
                                                 <li><a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL NEW YORK</a></li>
+                                                <li>
+                                                    <a href="<?php bloginfo('url'); ?>/category/item/vianel">VIANEL NEW YORK</a>
+                                                </li>
                                                 <li><a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a></li>
                                                 <li><a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a></li>
                                                 <li><a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a></li>
@@ -207,9 +214,11 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <?php /*
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/homeware/">HOMEWARE</a>
                                 </li>
+                                */ ?>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
                                 </li>
