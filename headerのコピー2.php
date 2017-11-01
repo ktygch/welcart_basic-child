@@ -143,97 +143,155 @@
                 </div>
 
 			<div id="mainNav">
-			    <div class="inner">
-                    <div class="logoarea">
+				<div class="logoarea">
+					<?php /*
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					*/ ?>
+					*/ ?>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<?php bloginfo( 'name' ); ?>
+						</a>
+					</h1>
+				</div>
+				<div class="menutxt">
+					<?php /*if(! welcart_basic_is_cart_page()): ?>
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<label for="panel"><span></span></label>
+							<input type="checkbox" id="panel" class="on-off" />
+							<?php 
+								$page_c	=	get_page_by_path('usces-cart');
+								$page_m	=	get_page_by_path('usces-member');
+								$pages	=	"{$page_c->ID},{$page_m->ID}";
+								wp_nav_menu( array( 'theme_location' => 'header', 'container_class' => 'nav-menu-open' , 'exclude' => $pages ,  'menu_class' => 'header-nav-container cf' ) );
+							?>
+						</nav><!-- #site-navigation -->
+					<?php endif;*/ ?>
+					<div id="mddNav">
+						<ul>
+							<li>
+								<a href="#" id="brands">BRANDS</a>
+								<div class="mddWrap">
+									<div class="mddInner">
+										<ul>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">HER. MAGAZINE</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+							    <?php /*
+								<a href="<?php bloginfo('url'); ?>/category/item/itemnew/">LATEST</a>
+                                */ ?>
+								<a href="<?php bloginfo('url'); ?>/category/item/latest/">LATEST</a>
+							</li>
+							<li>
+							    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">TOPS</a>
+							    <ul class="child">
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/tops/t-shirts/">T-SHIRTS</a>
+							        </li>
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/tops/shirts/">SHIRTS</a>
+							        </li>
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/tops/sweat/">SWEAT</a>
+							        </li>
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/outerwear/">OUTERWEAR</a>
+							        </li>
+							    </ul>
+							</li>
+							<li>
+							    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">BOTTOMS</a>
+							    <?php /*
+								<a href="#">BOTTOMS</a>
+								<div class="mddWrap">
+									<div class="mddInner">
+										<ul>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">VIEW ALL</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/?cat=30">I LOVE UGLY</a></li>
+										</ul>
+									</div>
+								</div>
+                                */ ?>
+							</li>
+							<li>
+							    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/">ACCESSORIES</a>
+							    <ul class="child">
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
+							        </li>
+							        <li>
+							            <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_plus/">IPHONE PLUS CASE</a>
+							        </li>
+							    </ul>
+							</li>
+							<?php /*
+							<li>
+							    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/homeware/">HOMEWARE</a>
+							</li>
+                            */ ?>
+							<li>
+							    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
+							    <?php /*
+								<a href="#">BOOKS</a>
+								<div class="mddWrap">
+									<div class="mddInner">
+										<ul>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">VIEW ALL</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/?cat=36">THE NEW ORDER MAGAZINE</a></li>
+											<li><a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/?cat=39">her. magazine</a></li>
+										</ul>
+									</div>
+								</div>
+                                */ ?>
+							</li>
+						</ul>
+					</div>
+                    <?php /*
+                    <div class="right">
+                        <a href="<?php bloginfo('url'); ?>/favorite/">お気に入り商品</a>
+                    </div>
+                    */ ?>
+				</div>
+				
+				<div id="smartMenu">
+					<span></span>
+				</div>
+				
+				<div class="switch">
+                    <?php /*
+                    <?php if(!is_page(get_option('usces_cart_number'))): ?>
+                    */ ?>
+                        <?php /*カートページでは無い場合*/ ?>
                         <?php /*
-                        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-                        */ ?>
-                        <h1 class="site-title">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                <?php bloginfo( 'name' ); ?>
-                            </a>
-                        </h1>
-                    </div>
-                    <div class="menutxt">
-                        <div id="mddNav">
-                            <ul>
-                                <li>
-                                    <a href="#" id="brands">BRANDS</a>
-                                    <div class="mddWrap">
-                                        <div class="mddInner">
-                                            <ul>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL NEW YORK</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a></li>
-                                                <li><a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">HER. MAGAZINE</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/latest/">LATEST</a>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">TOPS</a>
-                                    <ul class="child">
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/tops/t-shirts/">T-SHIRTS</a>
-                                        </li>
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/tops/shirts/">SHIRTS</a>
-                                        </li>
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/tops/sweat/">SWEAT</a>
-                                        </li>
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/outerwear/">OUTERWEAR</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">BOTTOMS</a>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/">ACCESSORIES</a>
-                                    <ul class="child">
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
-                                        </li>
-                                        <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_plus/">IPHONE PLUS CASE</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/homeware/">HOMEWARE</a>
-                                </li>
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <?php /*
-                        <div class="right">
-                            <a href="<?php bloginfo('url'); ?>/favorite/">お気に入り商品</a>
-                        </div>
-                        */ ?>
-                    </div>
-
-                    <div id="smartMenu">
-                        <span></span>
-                    </div>
-
-                    <div class="switch">
                         <a href="#">
-                            <span class="loupe">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </span>
+                            <?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?>
+                                <span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span>
+                            <?php endif; ?>
                         </a>
-                    </div>
-			    </div>
+                    <?php else: ?>
+                        <p>
+                            <?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?>
+                                <span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span>
+                            <?php endif; ?>
+                        </p>
+                    <?php endif; ?>
+                    */ ?>
+                    <a href="#">
+                        <span class="loupe">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </a>
+				</div>
+				
 			</div>
 			
 			<ul class="accordion">
@@ -245,7 +303,7 @@
 			                    <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a>
 			                </li>
 			                <li>
-			                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL NEW YORK</a>
+			                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL</a>
 			                </li>
 			                <li>
 			                    <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a>
