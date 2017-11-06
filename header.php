@@ -26,6 +26,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>-child/css/bs/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/design.css?<?php echo $timestamp; ?>">
 	
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/menu_pc.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/drawer.css">
+	
 	<?php if(is_front_page()): ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
 	<?php endif; ?>
@@ -40,119 +43,267 @@
 	
 	<?php wp_head(); ?>
    
-    <?php /*amazon pay*/ ?>
-	<?php /*if(welcart_basic_is_cart_page()): ?>
-        <script type='text/javascript'>
-            window.onAmazonLoginReady = function() {
-                amazon.Login.setClientId('amzn1.application-oa2-client.1129ae77d7ca4bd48f66f7be9b443d2a');
-            };
-            window.onAmazonPaymentsReady = function() {
-                showButton();
-            };
-            
-            window.onAmazonLoginReady = function() {
-                amazon.Login.setClientId('amzn1.application-oa2-client.1129ae77d7ca4bd48f66f7be9b443d2a');
-            };
-        </script>
-        
-        <script async="async" src='https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js'></script>
-    <?php endif;*/ ?>
-	
 </head>
 
 <body <?php body_class(); ?>>
-    <?php /*
-    <?php if(is_front_page()): ?>
-        <div class="loader">
-            <p>PLUS CONTEMPORARY</p>
-        </div>
-    <?php else: ?>
-        <div class="loader">
-        </div>
-	<?php endif; ?>
-    */ ?>
-	<div id="wrapper">
-		<header id="masthead" class="" role="banner">
-            <?php if(! welcart_basic_is_cart_page()): ?>
-            <?php endif; ?><?php /*アイコン虫眼鏡へ変更時、分岐外す*/ ?>
-                <div id="hiddenNav" class="container-fluid">
-                    <div class="row headtop">
-						<div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-3 header_form"><?php /*検索*/ ?>
-							<form method="get" action="<?php bloginfo( 'url' ); ?>">
-								<input name="s" id="s" type="text" />
-								<?php wp_dropdown_categories('depth=0&orderby=id&hide_empty=1&show_option_all=CATEGORY&exclude=13,14,15,16,20,28,44'); ?>
-								<input id="submit" type="submit" value="&#xf002" />
-							</form>
-						</div>
-						<?php /*
-						<div class="col-xs-12 col-md-3">
-							<div class="snav cf">
-								<div class="search-box">
-									<i class="fa fa-search"></i>
-									<?php get_search_form(); ?>
-								</div>
-							</div><!-- .snav -->
-						</div>
-						*/ ?>
-						<div class="col-xs-12 col-md-4 head_btns">
-							<?php if(usces_is_membersystem_state()): ?>
-								<div class="membership">
-									<ul class="cf">
-										<?php if( usces_is_login() ): ?>
-											<li class="username">
-												<?php printf(__('Hello, %s', 'usces'), usces_the_member_name('return')); ?>
-											</li>
-											<?php /*
-											<li>
-												<?php usces_loginout(); ?>
-											</li>
-                                            */ ?>
-											<li>
-												<a href="<?php echo USCES_MEMBER_URL; ?>"><?php _e('MY PAGE', 'welcart_basic') ?>
-												</a>
-											</li>
-										<?php else: ?>
-										    <?php /*
-											<li>
-												<?php _e('GUEST', 'usces');  ?>
-											</li>
-                                            */ ?>
-											<li>
-												<?php /*usces_loginout();*/ ?>
-												<a href="<?php bloginfo('url'); ?>/usces-member/?page=login">
-                                                    <i class="fa fa-key" aria-hidden="true"></i>
-												    LOGIN
-												</a>
-											</li>
-											<li>
-												<a href="<?php echo USCES_NEWMEMBER_URL; ?>">
-                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-												    <?php _e('JOIN','usces') ?>
-												</a>
-											</li>
-										<?php endif; ?>
-									</ul>
-								</div>
-							<?php endif; ?>
-							<div class="incart-btn">
-								<a href="<?php echo USCES_CART_URL; ?>">
-									<i class="fa fa-shopping-cart">
+	<div id="wrapper" class="drawer drawer--top drawer--navbarTopGutter">
+		<header id="masthead" role="banner">
+            <div id="hiddenNav" class="container-fluid">
+                <div class="row headtop">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-3 header_form"><?php /*検索*/ ?>
+                        <form method="get" action="<?php bloginfo( 'url' ); ?>">
+                            <input name="s" id="s" type="text" />
+                            <?php wp_dropdown_categories('depth=0&orderby=id&hide_empty=1&show_option_all=CATEGORY&exclude=13,14,15,16,20,28,44'); ?>
+                            <input id="submit" type="submit" value="&#xf002" />
+                        </form>
+                    </div>
+                    <?php /*
+                    <div class="col-xs-12 col-md-3">
+                        <div class="snav cf">
+                            <div class="search-box">
+                                <i class="fa fa-search"></i>
+                                <?php get_search_form(); ?>
+                            </div>
+                        </div><!-- .snav -->
+                    </div>
+                    */ ?>
+                    <div class="col-xs-12 col-md-4 head_btns">
+                        <?php if(usces_is_membersystem_state()): ?>
+                            <div class="membership">
+                                <ul class="cf">
+                                    <?php if( usces_is_login() ): ?>
+                                        <li class="username">
+                                            <?php printf(__('Hello, %s', 'usces'), usces_the_member_name('return')); ?>
+                                        </li>
                                         <?php /*
-                                        <?php _e('CART', 'usces') ?>
+                                        <li>
+                                            <?php usces_loginout(); ?>
+                                        </li>
                                         */ ?>
-                                    </i>
-								</a>
-							</div>
-						</div>
+                                        <li>
+                                            <a href="<?php echo USCES_MEMBER_URL; ?>"><?php _e('MY PAGE', 'welcart_basic') ?>
+                                            </a>
+                                        </li>
+                                    <?php else: ?>
+                                        <?php /*
+                                        <li>
+                                            <?php _e('GUEST', 'usces');  ?>
+                                        </li>
+                                        */ ?>
+                                        <li>
+                                            <?php /*usces_loginout();*/ ?>
+                                            <a href="<?php bloginfo('url'); ?>/usces-member/?page=login">
+                                                <i class="fa fa-key" aria-hidden="true"></i>
+                                                LOGIN
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo USCES_NEWMEMBER_URL; ?>">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <?php _e('JOIN','usces') ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                        <div class="incart-btn">
+                            <a href="<?php echo USCES_CART_URL; ?>">
+                                <i class="fa fa-shopping-cart">
+                                    <?php /*
+                                    <?php _e('CART', 'usces') ?>
+                                    */ ?>
+                                </i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="menu_wrap">
+               
+                <div class="logoarea">
+                    <h1 class="site-title">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <?php bloginfo( 'name' ); ?>
+                        </a>
+                    </h1>
+                </div>
+                
+                <ul class="menu">
+                    <li class="menu__multi">
+                        <a href="#">Menu multi level</a>
+                        <ul class="menu__second-level">
+                            <!-- 第2階層 -->
+                            <li>
+                                <a href="#" class="init-right">Child Menu</a>
+                                <ul class="menu__third-level">
+                                    <!-- 第3階層 -->
+                                    <li>
+                                        <a href="#" class="init-right">Grandchild Menu</a>
+                                        <ul class="menu__fourth-level">
+                                            <!-- 第4階層 -->
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__multi">
+                        <a href="#">Menu multi level</a>
+                        <ul class="menu__second-level">
+                            <!-- 第2階層 -->
+                            <li>
+                                <a href="#" class="init-right">Child Menu</a>
+                                <ul class="menu__third-level">
+                                    <!-- 第3階層 -->
+                                    <li>
+                                        <a href="#" class="init-right">Grandchild Menu</a>
+                                        <ul class="menu__fourth-level">
+                                            <!-- 第4階層 -->
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__multi">
+                        <a href="#">Menu multi level</a>
+                        <ul class="menu__second-level">
+                            <!-- 第2階層 -->
+                            <li>
+                                <a href="#" class="init-right">Child Menu</a>
+                                <ul class="menu__third-level">
+                                    <!-- 第3階層 -->
+                                    <li>
+                                        <a href="#" class="init-right">Grandchild Menu</a>
+                                        <ul class="menu__fourth-level">
+                                            <!-- 第4階層 -->
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__multi">
+                        <a href="#">Menu multi level</a>
+                        <ul class="menu__second-level">
+                            <!-- 第2階層 -->
+                            <li>
+                                <a href="#" class="init-right">Child Menu</a>
+                                <ul class="menu__third-level">
+                                    <!-- 第3階層 -->
+                                    <li>
+                                        <a href="#" class="init-right">Grandchild Menu</a>
+                                        <ul class="menu__fourth-level">
+                                            <!-- 第4階層 -->
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                            <li><a href="#">Great-Grandchild Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                    <li><a href="#">Grandchild Menu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="drawer-navbar drawer-navbar--fixed" role="banner">
+                    <div class="drawer-container">
+                        <div class="drawer-navbar-header">
+                            <button type="button" class="drawer-toggle drawer-hamburger">
+                                <span class="sr-only">toggle navigation</span>
+                                <span class="drawer-hamburger-icon"></span>
+                            </button>
+                        </div>
 
+                        <nav class="drawer-nav" role="navigation">
+                            <ul class="drawer-menu">
+                                <li><a class="drawer-menu-item" href="">TEST</a></li>
+                                <li><a class="drawer-menu-item" href="">TEST</a></li>
+                                <li><a class="drawer-menu-item" href="">TEST</a></li>
+                                <li><a class="drawer-menu-item" href="">TEST</a></li>
+                                <li class="drawer-dropdown">
+                                    <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        CATEGORY <span class="drawer-caret"></span>
+                                    </a>
+                                    <ul class="drawer-dropdown-menu">
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE1</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE2</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drawer-dropdown">
+                                    <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        GENRE <span class="drawer-caret"></span>
+                                    </a>
+                                    <ul class="drawer-dropdown-menu">
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE1</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE2</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drawer-dropdown">
+                                    <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        TEST <span class="drawer-caret"></span>
+                                    </a>
+                                    <ul class="drawer-dropdown-menu">
+                                        <li><a class="drawer-dropdown-menu-item" href="">TEST</a></li>
+                                        <li><a class="drawer-dropdown-menu-item" href="">TEST</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                
+                <div class="switch">
+                    <a href="#">
+                        <span class="loupe">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                
+                <?php /*
+                <div id="smartMenu">
+                    <span></span>
+                </div>
+                */ ?>
+
+            </div>
+
+            <?php /*
 			<div id="mainNav">
 			    <div class="inner">
                     <div class="logoarea">
-                        <?php /*
-                        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-                        */ ?>
                         <h1 class="site-title">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                                 <?php bloginfo( 'name' ); ?>
@@ -214,21 +365,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <?php /*
-                                <li>
-                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/homeware/">HOMEWARE</a>
-                                </li>
-                                */ ?>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
                                 </li>
                             </ul>
                         </div>
-                        <?php /*
-                        <div class="right">
-                            <a href="<?php bloginfo('url'); ?>/favorite/">お気に入り商品</a>
-                        </div>
-                        */ ?>
                     </div>
 
                     <div id="smartMenu">
@@ -244,7 +385,9 @@
                     </div>
 			    </div>
 			</div>
+			*/ ?>
 			
+			<?php /*
 			<ul class="accordion">
                 <li class="i">
 			        <span>BRANDS</span>
@@ -302,15 +445,11 @@
                         </ul>
                     </div>
                 </li>
-                <?php /*
-                <li class="i">
-                    <a href="<?php bloginfo('url'); ?>/category/item/homeware/">HOMEWARE</a>
-                </li>
-                */ ?>
                 <li class="i">
                     <a href="<?php bloginfo('url'); ?>/category/item/books/">BOOKS</a>
                 </li>
 			</ul>
+            */ ?>
 		</header><!-- #masthead -->
 		
 		<div id="main" class="wrapper <?php /*echo $class;*/ ?>">
