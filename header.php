@@ -121,183 +121,206 @@
             </div>
             
             <div class="menu_wrap">
-               
-                <div class="logoarea">
-                    <h1 class="site-title">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                            <?php bloginfo( 'name' ); ?>
-                        </a>
-                    </h1>
-                </div>
-                
-                <ul class="menu">
-                    <li class="menu__multi">
-                        <a href="#">Menu multi level</a>
-                        <ul class="menu__second-level">
-                            <!-- 第2階層 -->
-                            <li>
-                                <a href="#" class="init-right">Child Menu</a>
-                                <ul class="menu__third-level">
-                                    <!-- 第3階層 -->
-                                    <li>
-                                        <a href="#" class="init-right">Grandchild Menu</a>
-                                        <ul class="menu__fourth-level">
-                                            <!-- 第4階層 -->
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__multi">
-                        <a href="#">Menu multi level</a>
-                        <ul class="menu__second-level">
-                            <!-- 第2階層 -->
-                            <li>
-                                <a href="#" class="init-right">Child Menu</a>
-                                <ul class="menu__third-level">
-                                    <!-- 第3階層 -->
-                                    <li>
-                                        <a href="#" class="init-right">Grandchild Menu</a>
-                                        <ul class="menu__fourth-level">
-                                            <!-- 第4階層 -->
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__multi">
-                        <a href="#">Menu multi level</a>
-                        <ul class="menu__second-level">
-                            <!-- 第2階層 -->
-                            <li>
-                                <a href="#" class="init-right">Child Menu</a>
-                                <ul class="menu__third-level">
-                                    <!-- 第3階層 -->
-                                    <li>
-                                        <a href="#" class="init-right">Grandchild Menu</a>
-                                        <ul class="menu__fourth-level">
-                                            <!-- 第4階層 -->
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__multi">
-                        <a href="#">Menu multi level</a>
-                        <ul class="menu__second-level">
-                            <!-- 第2階層 -->
-                            <li>
-                                <a href="#" class="init-right">Child Menu</a>
-                                <ul class="menu__third-level">
-                                    <!-- 第3階層 -->
-                                    <li>
-                                        <a href="#" class="init-right">Grandchild Menu</a>
-                                        <ul class="menu__fourth-level">
-                                            <!-- 第4階層 -->
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                            <li><a href="#">Great-Grandchild Menu</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                    <li><a href="#">Grandchild Menu</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                
-                <div class="drawer-navbar drawer-navbar--fixed" role="banner">
-                    <div class="drawer-container">
-                        <div class="drawer-navbar-header">
-                            <button type="button" class="drawer-toggle drawer-hamburger">
-                                <span class="sr-only">toggle navigation</span>
-                                <span class="drawer-hamburger-icon"></span>
-                            </button>
-                        </div>
+                <div class="inner">
+                    <div class="logoarea">
+                        <h1 class="site-title">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                <?php bloginfo( 'name' ); ?>
+                            </a>
+                        </h1>
+                    </div>
 
-                        <nav class="drawer-nav" role="navigation">
-                            <ul class="drawer-menu">
-                                <li><a class="drawer-menu-item" href="">TEST</a></li>
-                                <li><a class="drawer-menu-item" href="">TEST</a></li>
-                                <li><a class="drawer-menu-item" href="">TEST</a></li>
-                                <li><a class="drawer-menu-item" href="">TEST</a></li>
-                                <li class="drawer-dropdown">
-                                    <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
-                                        CATEGORY <span class="drawer-caret"></span>
-                                    </a>
-                                    <ul class="drawer-dropdown-menu">
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE1</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE2</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">CATE3</a></li>
+                    <?php /*PCナビゲーション*/ ?>
+                    <ul class="menu">
+                        <li class="menu__multi">
+                            <a href="#">BRANDS</a>
+                            <ul class="menu__second-level brands">
+                                <!-- 第2階層 -->
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">VIANEL NEW YORK</a>
+                                    <ul class="menu__third-level">
+                                        <!-- 第3階層 -->
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">OLIVIA PALERMO</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/camo/">CAMO COLLECTION</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/brand/vianel/standard/">STANDARD COLLECTION</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="drawer-dropdown">
-                                    <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
-                                        GENRE <span class="drawer-caret"></span>
-                                    </a>
-                                    <ul class="drawer-dropdown-menu">
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE1</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE2</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">GENRE3</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/byparra/">BY PARRA</a>
                                 </li>
-                                <li class="drawer-dropdown">
-                                    <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
-                                        TEST <span class="drawer-caret"></span>
-                                    </a>
-                                    <ul class="drawer-dropdown-menu">
-                                        <li><a class="drawer-dropdown-menu-item" href="">TEST</a></li>
-                                        <li><a class="drawer-dropdown-menu-item" href="">TEST</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/camar/">CAMAR</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/applebum/">APPLEBUM</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/hermagazine/">HER. MAGAZINE</a>
                                 </li>
                             </ul>
-                        </nav>
+                        </li>
+                        <li class="menu__multi">
+                            <a href="<?php bloginfo('url'); ?>/category/item/latest/">LATEST</a>
+                        </li>
+                        <li class="menu__multi">
+                            <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">TOPS</a>
+                            <ul class="menu__second-level genre">
+                                <!-- 第2階層 -->
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/shirts/">SHIRTS</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/sweat/">SWEAT</a>
+                                </li>
+                                <?php /*
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/hoodie/">HOODIE</a>
+                                </li>
+                                */ ?>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/outerwear/">OUTERWEAR</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__multi">
+                            <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">BOTTOMS</a>
+                            <?php /*
+                            <ul class="menu__second-level genre">
+                                <!-- 第2階層 -->
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/long/">LONG</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/denim/">DENIM</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/short/">SHORT</a>
+                                </li>
+                            </ul>
+                            */ ?>
+                        </li>
+                        <li class="menu__multi">
+                            <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/">ACCESSORIES</a>
+                            <ul class="menu__second-level genre">
+                                <!-- 第2階層 -->
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_plus/">IPHONE PLUS CASE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php /*
+                        <li class="menu__multi">
+                            <a href="">HOMEWARES</a>
+                        </li>
+                        */ ?>
+                        <li class="menu__multi">
+                            <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
+                        </li>
+                    </ul>
+                    <?php /*PCナビゲーション END*/ ?>
 
+                    <?php /*SMARTスマホナビゲーション*/ ?>
+                    <div class="drawer-navbar drawer-navbar--fixed" role="banner">
+                        <div class="drawer-container">
+                            <div class="drawer-navbar-header">
+                                <button type="button" class="drawer-toggle drawer-hamburger">
+                                    <span class="sr-only">toggle navigation</span>
+                                    <span class="drawer-hamburger-icon"></span>
+                                </button>
+                            </div>
+                            <nav class="drawer-nav" role="navigation">
+                                <ul class="drawer-menu">
+                                    <li class="drawer-dropdown">
+                                        <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                            BRANDS <span class="drawer-caret"></span>
+                                        </a>
+                                        <ul class="drawer-dropdown-menu">
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a></li>
+                                            <li>
+                                                <a class="drawer-dropdown-menu-item" href="#">VIANEL NEW YORK</a>
+                                            </li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">HER. MAGAZINE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="drawer-menu-item" href="<?php bloginfo('url'); ?>/category/item/latest/">LATEST</a></li>
+                                    <li class="drawer-dropdown">
+                                        <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                            TOPS <span class="drawer-caret"></span>
+                                        </a>
+                                        <ul class="drawer-dropdown-menu">
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">ALL</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/shirts/">SHIRTS</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/sweat/">SWEAT</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/hoodie/">HOODIE</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/outerwear/">OUTERWEAR</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drawer-dropdown">
+                                        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                            BOTTOMS <span class="drawer-caret"></span>
+                                        </a>
+                                        <ul class="drawer-dropdown-menu">
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">ALL</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/long/">LONG</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/denim/">DENIM</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/short/">SHORT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drawer-dropdown">
+                                        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                            ACCESSORIES <span class="drawer-caret"></span>
+                                        </a>
+                                        <ul class="drawer-dropdown-menu">
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/">ALL</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/iphone/">IPHONE CASE</a></li>
+                                            <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/iphone_plus/">IPHONE PLUS CASE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="drawer-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
                     </div>
-                </div>
-                
-                <div class="switch">
-                    <a href="#">
-                        <span class="loupe">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>
-                
-                <?php /*
-                <div id="smartMenu">
-                    <span></span>
-                </div>
-                */ ?>
+                    <?php /*SMARTスマホナビゲーション END*/ ?>
 
+                    <div class="switch">
+                        <a href="#">
+                            <span class="loupe">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                    <?php /*
+                    <div id="smartMenu">
+                        <span></span>
+                    </div>
+                    */ ?>
+                </div>
             </div>
 
             <?php /*

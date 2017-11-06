@@ -20,6 +20,9 @@ get_header(); ?>
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8185.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/11/th_170029_poco8397_2.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8132.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
@@ -29,10 +32,13 @@ get_header(); ?>
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8199.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_267.jpg" alt="" class="sp-image">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/11/th_170029_poco8390.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8263.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_267.jpg" alt="" class="sp-image">
                             </div>
                             <?php if(!is_mobile()): ?>
                                 <?php /* PCのみ表示される */ ?>
@@ -69,7 +75,7 @@ get_header(); ?>
                 <?php if (have_posts()) : ?>
                     <h3 class="v_idx"><span>IPHONE 7 and 8 CASE</span></h3>
                     <div class="flex_item">
-                        <?php query_posts(array('category__and'=>array(14, 303))); ?>
+                        <?php query_posts(array('category__and'=>array(376, 303))); ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <div id="post-<?php the_ID(); ?>" <?php /*post_class();*/ ?> class="f_item itemimg">
 
@@ -105,7 +111,43 @@ get_header(); ?>
                     
                     <h3 class="v_idx"><span>IPHONE 7 PLUS and 8 PLUS CASE</span></h3>
                     <div class="flex_item">
-                        <?php query_posts(array('category__and'=>array(14, 304))); ?>
+                        <?php query_posts(array('category__and'=>array(376, 304))); ?>
+                        <?php while (have_posts()) : the_post(); ?>
+                            <div id="post-<?php the_ID(); ?>" <?php /*post_class();*/ ?> class="f_item itemimg">
+
+                                <a href="<?php the_permalink() ?>">
+                                    <span style="background-image: url('<?php usces_the_itemImageURL(0); ?>')">
+                                        <?php welcart_basic_campaign_message(); ?>
+                                    </span>
+                                    <span style="background-image: url('<?php usces_the_itemImageURL(1); ?>')">
+                                        <?php welcart_basic_campaign_message(); ?>
+                                    </span>
+                                    <?php /*usces_the_itemImage( 0, 300, 300 );*/
+                                    ?>
+                                    <div class="item_info">
+                                        <h3 class="itemname">
+                                            <?php /*usces_the_itemName();*/ ?>
+                                            <?php the_title(); ?>
+                                        </h3>
+                                        <div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); usces_guid_tax(); ?></div>
+                                    </div>
+                                </a>
+                                <?php if(! usces_have_zaiko_anyone() ) : ?>
+                                    <div class="soldout">
+                                        <p>
+                                            <span><?php _e('SOLD OUT', 'usces' ); ?></span>
+                                        </p>
+                                    </div>
+                                <?php endif; ?>
+
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
+                    </div>
+                    
+                    <h3 class="v_idx"><span>V.BACKUP</span></h3>
+                    <div class="flex_item">
+                        <?php query_posts(array('category__and'=>array(376, 375))); ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <div id="post-<?php the_ID(); ?>" <?php /*post_class();*/ ?> class="f_item itemimg">
 
@@ -141,7 +183,7 @@ get_header(); ?>
                     
                     <h3 class="v_idx"><span>LEATHER TRAY</span></h3>
                     <div class="flex_item">
-                        <?php query_posts(array('category__and'=>array(14, 333))); ?>
+                        <?php query_posts(array('category__and'=>array(376, 333))); ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <div id="post-<?php the_ID(); ?>" <?php /*post_class();*/ ?> class="f_item itemimg">
 

@@ -361,7 +361,9 @@ header#masthead {
   z-index: 102; }
   header#masthead #hiddenNav {
     display: none;
-    padding: 0; }
+    padding: 0;
+    position: relative;
+    z-index: 200; }
     header#masthead #hiddenNav .headtop {
       min-height: 22px;
       background: #000;
@@ -775,7 +777,7 @@ header#masthead {
 #main {
   width: auto !important;
   margin: 0 !important;
-  padding: 90px 0 45px !important; }
+  padding: 50px 0 45px !important; }
   @media (max-width: 767px) {
     #main {
       padding-top: 50px !important; } }

@@ -1,7 +1,8 @@
 // JavaScript Document
 $(document).ready(function(){
 	var winH = $(window).height();
-	var slideH = winH-130;
+	//var slideH = winH-130;
+	var slideH = winH-90;
 	
 	$( '#slider1' ).sliderPro({
 		width: "100%",

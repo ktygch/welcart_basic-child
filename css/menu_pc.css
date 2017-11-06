@@ -313,133 +313,135 @@ body {
   overflow: hidden; }
 
 .menu_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   background: #000;
   position: relative; }
-  .menu_wrap .logoarea {
-    background-color: #000;
-    z-index: 200; }
-    @media (max-width: 991px) {
-      .menu_wrap .logoarea {
-        margin-right: auto; } }
-    .menu_wrap .logoarea h1.site-title {
-      float: none;
-      width: 80px !important;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      margin: 0 !important;
-      padding: 0 5px !important; }
-      @media (max-width: 767px) {
-        .menu_wrap .logoarea h1.site-title {
-          width: 70px !important; } }
-      .menu_wrap .logoarea h1.site-title a {
-        display: block;
-        width: 100%;
-        height: 0;
-        padding-top: 50px;
-        line-height: 50px;
-        overflow: hidden;
-        background-image: url(../image/svg/poco_logo_wht.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain; }
+  .menu_wrap .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 0; }
+    .menu_wrap .inner .logoarea {
+      background-color: #000;
+      z-index: 200; }
+      @media (max-width: 991px) {
+        .menu_wrap .inner .logoarea {
+          margin-right: auto; } }
+      .menu_wrap .inner .logoarea h1.site-title {
+        float: none;
+        width: 80px !important;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin: 0 !important;
+        padding: 0 5px !important; }
         @media (max-width: 767px) {
-          .menu_wrap .logoarea h1.site-title a {
-            padding-top: 50px;
-            line-height: 50px; } }
-  .menu_wrap .switch {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 8px 5px 0 0;
-    position: relative;
-    z-index: 102;
-    background-color: #000; }
-    .menu_wrap .switch a, .menu_wrap .switch p {
-      display: inline-block;
-      width: 34px;
-      height: 34px;
-      line-height: 32px;
+          .menu_wrap .inner .logoarea h1.site-title {
+            width: 70px !important; } }
+        .menu_wrap .inner .logoarea h1.site-title a {
+          display: block;
+          width: 100%;
+          height: 0;
+          padding-top: 50px;
+          line-height: 50px;
+          overflow: hidden;
+          background-image: url(../image/svg/poco_logo_wht.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain; }
+          @media (max-width: 767px) {
+            .menu_wrap .inner .logoarea h1.site-title a {
+              padding-top: 50px;
+              line-height: 50px; } }
+    .menu_wrap .inner .switch {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      padding: 0 5px;
-      text-align: center;
-      color: #fff !important;
-      border-width: 2px;
-      border-style: solid;
-      border-color: #fff; }
-      @media (max-width: 767px) {
-        .menu_wrap .switch a, .menu_wrap .switch p {
-          margin-top: 8px; } }
-      .menu_wrap .switch a span.total-quant, .menu_wrap .switch p span.total-quant {
-        font-size: 130%; }
-      .menu_wrap .switch a:hover, .menu_wrap .switch p:hover {
-        text-decoration: none; }
-      .menu_wrap .switch a span.loupe, .menu_wrap .switch p span.loupe {
-        font-family: FontAwesome; }
-    .menu_wrap .switch.open a {
-      display: inline-block;
-      width: 34px;
-      height: 0;
-      line-height: 32px;
-      padding-top: 30px;
-      overflow: hidden;
+      padding: 8px 5px 0;
+      position: relative;
+      z-index: 102;
+      background-color: #000; }
+      .menu_wrap .inner .switch a, .menu_wrap .inner .switch p {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        line-height: 32px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 0 5px;
+        text-align: center;
+        color: #fff !important;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #fff; }
+        .menu_wrap .inner .switch a span.total-quant, .menu_wrap .inner .switch p span.total-quant {
+          font-size: 130%; }
+        .menu_wrap .inner .switch a:hover, .menu_wrap .inner .switch p:hover {
+          text-decoration: none; }
+        .menu_wrap .inner .switch a span.loupe, .menu_wrap .inner .switch p span.loupe {
+          font-family: FontAwesome; }
+      .menu_wrap .inner .switch.open a {
+        display: inline-block;
+        width: 34px;
+        height: 0;
+        line-height: 32px;
+        padding-top: 30px;
+        overflow: hidden;
+        position: relative; }
+        .menu_wrap .inner .switch.open a:before, .menu_wrap .inner .switch.open a:after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 20px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          margin-top: -10px; }
+        .menu_wrap .inner .switch.open a:before {
+          left: 50%;
+          margin-left: -1px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+        .menu_wrap .inner .switch.open a:after {
+          right: 50%;
+          margin-right: -1px;
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+    .menu_wrap .inner #smartMenu {
+      display: none;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 50px;
       position: relative; }
-      .menu_wrap .switch.open a:before, .menu_wrap .switch.open a:after {
-        content: "";
+      .menu_wrap .inner #smartMenu span {
         display: block;
-        width: 2px;
-        height: 20px;
-        background: #fff;
-        position: absolute;
-        top: 50%;
-        margin-top: -10px; }
-      .menu_wrap .switch.open a:before {
-        left: 50%;
-        margin-left: -1px;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg); }
-      .menu_wrap .switch.open a:after {
-        right: 50%;
-        margin-right: -1px;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg); }
-  .menu_wrap #smartMenu {
-    display: none;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 50px;
-    position: relative; }
-    .menu_wrap #smartMenu span {
-      display: block;
-      width: 55%;
-      height: 2px;
-      background: #fff;
-      position: absolute;
-      top: 50%;
-      margin-top: -1px;
-      left: 50%;
-      margin-left: -27.5%; }
-      .menu_wrap #smartMenu span:before, .menu_wrap #smartMenu span:after {
-        content: "";
-        display: block;
-        width: 100%;
+        width: 55%;
         height: 2px;
         background: #fff;
         position: absolute;
-        left: 0; }
-      .menu_wrap #smartMenu span:before {
-        top: -9px; }
-      .menu_wrap #smartMenu span:after {
-        bottom: -9px; }
-    @media (max-width: 991px) and (min-width: 768px) {
-      .menu_wrap #smartMenu {
-        display: block; } }
-    @media (max-width: 767px) {
-      .menu_wrap #smartMenu {
-        display: block; } }
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -27.5%; }
+        .menu_wrap .inner #smartMenu span:before, .menu_wrap .inner #smartMenu span:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          left: 0; }
+        .menu_wrap .inner #smartMenu span:before {
+          top: -9px; }
+        .menu_wrap .inner #smartMenu span:after {
+          bottom: -9px; }
+      @media (max-width: 991px) and (min-width: 768px) {
+        .menu_wrap .inner #smartMenu {
+          display: block; } }
+      @media (max-width: 767px) {
+        .menu_wrap .inner #smartMenu {
+          display: block; } }
 
 .menu {
   display: -webkit-box;
@@ -462,7 +464,6 @@ body {
     line-height: 50px;
     background: #000; }
     .menu > li:hover {
-      background: #222;
       -webkit-transition: all .5s;
       transition: all .5s; }
     .menu > li a {
@@ -481,14 +482,22 @@ ul.menu__second-level {
   visibility: hidden;
   opacity: 0;
   z-index: 1; }
-  ul.menu__second-level li a:hover {
-    background: #111; }
+  ul.menu__second-level.brands, ul.menu__second-level.genre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  ul.menu__second-level.brands {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5%; }
+  ul.menu__second-level.genre {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 ul.menu__third-level {
   visibility: hidden;
   opacity: 0; }
-  ul.menu__third-level li a:hover {
-    background: #2a1f1f; }
 
 ul.menu__fourth-level {
   visibility: hidden;
@@ -522,14 +531,12 @@ ul.menu__fourth-level {
   top: 50px;
   left: 0;
   width: 100%;
-  background: #072A24;
+  background: #000;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
-  .menu > li.menu__multi ul.menu__second-level li:hover {
-    background: #111; }
-    .menu > li.menu__multi ul.menu__second-level li:hover ul.menu__third-level {
-      visibility: visible;
-      opacity: 1; }
+  .menu > li.menu__multi ul.menu__second-level li:hover ul.menu__third-level {
+    visibility: visible;
+    opacity: 1; }
   .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,35 +551,31 @@ ul.menu__fourth-level {
     top: 50px;
     left: 0;
     width: 100%;
-    background: #111;
+    background: #000;
     -webkit-transition: all .2s ease;
     transition: all .2s ease; }
-    .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li {
-      width: 33%; }
-      .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li:hover {
-        background: #2a1f1f; }
-        .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li:hover ul.menu__fourth-level {
-          visibility: visible;
-          opacity: 1; }
-      .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li ul.menu__fourth-level {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        position: absolute;
-        /*
+    .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li:hover ul.menu__fourth-level {
+      visibility: visible;
+      opacity: 1; }
+    .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li ul.menu__fourth-level {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      position: absolute;
+      /*
                         top: -1px;
                         left: 100%;
                         */
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background: #2a1f1f;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease; }
-        .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li ul.menu__fourth-level li {
-          width: 33%; }
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background: #2a1f1f;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      .menu > li.menu__multi ul.menu__second-level li ul.menu__third-level li ul.menu__fourth-level li {
+        width: 33%; }
 
 .init-right:after {
   content: '';
