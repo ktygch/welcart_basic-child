@@ -493,7 +493,8 @@ ul.menu__second-level {
     padding: 0 5%; }
   ul.menu__second-level.genre {
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    padding: 0 8%; }
 
 ul.menu__third-level {
   visibility: hidden;

@@ -182,6 +182,9 @@
                             <ul class="menu__second-level genre">
                                 <!-- 第2階層 -->
                                 <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">ALL</a>
+                                </li>
+                                <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a>
                                 </li>
                                 <li>
@@ -221,6 +224,9 @@
                             <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/accessories/">ACCESSORIES</a>
                             <ul class="menu__second-level genre">
                                 <!-- 第2階層 -->
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/">ALL</a>
+                                </li>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
                                 </li>
