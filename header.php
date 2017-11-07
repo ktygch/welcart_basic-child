@@ -144,6 +144,9 @@
                                     <ul class="menu__third-level">
                                         <!-- 第3階層 -->
                                         <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">ALL</a>
+                                        </li>
+                                        <li>
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">OLIVIA PALERMO</a>
                                         </li>
                                         <li>
@@ -255,7 +258,7 @@
                                         <ul class="drawer-dropdown-menu">
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a></li>
                                             <li>
-                                                <a class="drawer-dropdown-menu-item" href="#">VIANEL NEW YORK</a>
+                                                <a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">VIANEL NEW YORK</a>
                                             </li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a></li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a></li>
@@ -274,10 +277,14 @@
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a></li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/shirts/">SHIRTS</a></li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/sweat/">SWEAT</a></li>
+                                            <?php /*新設待ち
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/hoodie/">HOODIE</a></li>
+                                            */ ?>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/outerwear/">OUTERWEAR</a></li>
                                         </ul>
                                     </li>
+                                    <li><a class="drawer-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">BOTTOMS</a></li>
+                                    <?php /*
                                     <li class="drawer-dropdown">
                                         <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                                             BOTTOMS <span class="drawer-caret"></span>
@@ -289,6 +296,7 @@
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/short/">SHORT</a></li>
                                         </ul>
                                     </li>
+                                    */ ?>
                                     <li class="drawer-dropdown">
                                         <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                                             ACCESSORIES <span class="drawer-caret"></span>

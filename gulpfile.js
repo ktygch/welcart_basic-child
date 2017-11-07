@@ -21,8 +21,6 @@ gulp.task("js", function(){
     .pipe(gulp.dest("./js/min"));
 });
 
-
-
 gulp.task("sass", function(){
 	gulp.src("sass/**/*.scss")
 		.pipe(plumber())

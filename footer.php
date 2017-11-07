@@ -326,7 +326,7 @@
     <?php /* ローダー外す。20170914
     <script src="<?php bloginfo('template_directory'); ?>-child/js/min/loader.js"></script>
     */ ?>
-	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/default.js?<?php echo $timestamp; ?>"></script>
+	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/default.min.js?<?php echo $timestamp; ?>"></script>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/bs/bootstrap.min.js"></script>
 	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
