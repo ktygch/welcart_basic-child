@@ -487,9 +487,10 @@ header#masthead{
         }
 	}
     
-    ul.accordion{
+    .accordion{
+        display: none;
 		width: 100%;
-        background: #000;
+        background: #fff;
         li.i{
             display: none;
             cursor: pointer;
@@ -521,7 +522,6 @@ header#masthead{
             }
         }
         & li.expanded{
-            //background: #444;
         }
     }
     

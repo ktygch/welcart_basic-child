@@ -119,7 +119,7 @@ $(function(){
         if($this.hasClass('open')){
             $this.removeClass('open');
             $('.accordion').hide();
-            $('html').off('click', closeItems);
+            //$('html').off('click', closeItems);
         }else{
             $this.addClass('open');
             $('.accordion').css({
@@ -139,7 +139,7 @@ $(function(){
                     opacity: 1
                 }, 300 );
             });
-            $('html').on('click', closeItems);
+            //$('html').on('click', closeItems);
         }
         function closeItems(){
             $this.removeClass('open');

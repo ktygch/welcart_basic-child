@@ -731,25 +731,26 @@ header#masthead {
         @media (max-width: 767px) {
           header#masthead #mainNav .inner #smartMenu {
             display: block; } }
-  header#masthead ul.accordion {
+  header#masthead .accordion {
+    display: none;
     width: 100%;
-    background: #000; }
-    header#masthead ul.accordion li.i {
+    background: #fff; }
+    header#masthead .accordion li.i {
       display: none;
       cursor: pointer; }
-      header#masthead ul.accordion li.i > a {
+      header#masthead .accordion li.i > a {
         display: block;
         line-height: 45px;
         text-align: center;
         color: #fff !important; }
-      header#masthead ul.accordion li.i span {
+      header#masthead .accordion li.i span {
         display: block;
         line-height: 45px;
         text-align: center;
         color: #fff; }
-      header#masthead ul.accordion li.i .content {
+      header#masthead .accordion li.i .content {
         display: none; }
-        header#masthead ul.accordion li.i .content ul li a {
+        header#masthead .accordion li.i .content ul li a {
           display: block;
           line-height: 45px;
           text-align: center;

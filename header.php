@@ -27,7 +27,10 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/design.css?<?php echo $timestamp; ?>">
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/menu_pc.css">
+	
+	<?php /*
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/drawer.css">
+    */ ?>
 	
 	<?php if(is_front_page()): ?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>-child/css/slider-pro.css">
@@ -153,24 +156,24 @@
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/camo/">CAMO COLLECTION</a>
                                         </li>
                                         <li>
-                                            <a href="<?php bloginfo('url'); ?>/category/brand/vianel/standard/">STANDARD COLLECTION</a>
+                                            <a href="<?php bloginfo('url'); ?>/category/brand/vianel/standard/">IPHONE CASES</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/byparra/">BY PARRA</a>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/camar/">CAMAR</a>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/applebum/">APPLEBUM</a>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
                                 </li>
                                 <li>
-                                    <a href="<?php bloginfo('url'); ?>/cagtegory/brand/hermagazine/">HER. MAGAZINE</a>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">HER. MAGAZINE</a>
                                 </li>
                             </ul>
                         </li>
@@ -246,7 +249,7 @@
                     </ul>
                     <?php /*PCナビゲーション END*/ ?>
 
-                    <?php /*SMARTスマホナビゲーション*/ ?>
+                    <?php /*SMARTスマホナビゲーション
                     <div class="drawer-navbar drawer-navbar--fixed" role="banner">
                         <div class="drawer-container">
                             <div class="drawer-navbar-header">
@@ -283,14 +286,10 @@
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a></li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/shirts/">SHIRTS</a></li>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/sweat/">SWEAT</a></li>
-                                            <?php /*新設待ち
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/hoodie/">HOODIE</a></li>
-                                            */ ?>
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/outerwear/">OUTERWEAR</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="drawer-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">BOTTOMS</a></li>
-                                    <?php /*
                                     <li class="drawer-dropdown">
                                         <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                                             BOTTOMS <span class="drawer-caret"></span>
@@ -302,7 +301,6 @@
                                             <li><a class="drawer-dropdown-menu-item" href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/short/">SHORT</a></li>
                                         </ul>
                                     </li>
-                                    */ ?>
                                     <li class="drawer-dropdown">
                                         <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                                             ACCESSORIES <span class="drawer-caret"></span>
@@ -319,8 +317,12 @@
 
                         </div>
                     </div>
-                    <?php /*SMARTスマホナビゲーション END*/ ?>
+                    SMARTスマホナビゲーション END*/ ?>
 
+                    <div id="smartMenu">
+                        <span></span>
+                    </div>
+                   
                     <div class="switch">
                         <a href="#">
                             <span class="loupe">
@@ -329,11 +331,6 @@
                         </a>
                     </div>
 
-                    <?php /*
-                    <div id="smartMenu">
-                        <span></span>
-                    </div>
-                    */ ?>
                 </div>
             </div>
 
@@ -461,7 +458,7 @@
 			        <span>TOPS</span>
 			        <div class="content">
 			            <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/category/item/tops/">VIEW ALL</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/category/item/tops/">ALL</a></li>
 			                <li><a href="<?php bloginfo('url'); ?>/category/item/tops/t-shirts/">T-SHIRTS</a></li>
 			                <li><a href="<?php bloginfo('url'); ?>/category/item/tops/shirts/">SHIRTS</a></li>
 			                <li><a href="<?php bloginfo('url'); ?>/category/item/tops/sweat/">SWEAT</a></li>
@@ -476,7 +473,7 @@
                     <span>ACCESSORIES</span>
                     <div class="content">
                         <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/category/item/accessories/">VIEW ALL</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/category/item/accessories/">ALL</a></li>
                             <li><a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a></li>
                             <li><a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_plus/">IPHONE PLUS CASE</a></li>
                         </ul>
@@ -487,6 +484,151 @@
                 </li>
 			</ul>
             */ ?>
+
+            <div class="accordion">
+                <div class="panel-group" id="parent">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#parent" href="#acc1">
+                                    BRANDS
+                                </a>
+                            </h4>
+                        </div>
+                        
+                        <div id="acc1" class="panel-collapse collapse">
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">I LOVE UGLY</a>
+                            </div>
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#acc11">
+                                                    VIANEL NEW YORK
+                                                </a>
+                                            </h4>
+                                    </div>
+                                    <div id="acc11" class="panel-collapse collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">ALL</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">OLIVIA PALERMO</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/camo_collection/">CAMO COLLECTION</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/standard/">IPHONE CASES</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">BY PARRA</a>
+                            </div>
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a>
+                            </div>
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a>
+                            </div>
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
+                            </div>
+                            <div class="panel-group">
+                                <a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">HER. MAGAZINE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="<?php bloginfo('url'); ?>/category/item/latest/">
+                                    LATEST
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#parent" href="#acc2">
+                                    TOPS
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="acc2" class="panel-collapse collapse">
+                            <ul>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/">ALL</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/t-shirts/">T-SHIRTS</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/shirts/">SHIRTS</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/sweat/">SWEAT</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/tops/outerwear/">OUTERWEAR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/bottoms/">
+                                    BOTTOMS
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#parent" href="#acc3">
+                                    ACCESSORIES
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="acc3" class="panel-collapse collapse">
+                            <ul>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/">ALL</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_plus/">IPHONE PLUS CASE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="<?php bloginfo('url'); ?>/category/item/books/">
+                                    BOOKS
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 		</header><!-- #masthead -->
 		
 		<div id="main" class="wrapper <?php /*echo $class;*/ ?>">

@@ -329,6 +329,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/default.min.js?<?php echo $timestamp; ?>"></script>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/bs/bootstrap.min.js"></script>
 	
+    <?php /*
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>-child/js/min/drawer.min.js" charset="utf-8"></script>
     <script>
@@ -336,6 +337,7 @@
             $('.drawer').drawer();
         });
     </script>
+    */ ?>
 	
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/jquery.sliderPro.min.js"></script>
 	<?php if(is_front_page()): ?>

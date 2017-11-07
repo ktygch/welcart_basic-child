@@ -3,14 +3,12 @@
 		<div id="slider1" class="slider-pro">
 			<div class="sp-slides">
                 <?php /*特集記事*/ ?>
-                <?php /*
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/09/39200-02.jpg" class="sp-image" alt="">
-                    <a href="<?php bloginfo('url'); ?>/topics/by-parra-2017fw-new-items/">
-                        <span>BY PARRA</span>
+                    <img src="https://po-co.jp/wp-content/uploads/2017/08/Olivia-02_trim.jpg" alt="" class="sp-image">
+                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">
+                        <span>VIANEL NEW YORK</span>
                     </a>
                 </div>
-                */ ?>
                 
 			    <?php /*スライド1巡目*/ ?>
                 <div class="sp-slide">
@@ -22,7 +20,7 @@
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8321.jpg" class="sp-image" alt="">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
-                        <span>VIANEL</span>
+                        <span>VIANEL NEW YORK</span>
                     </a>
                 </div>
                 <div class="sp-slide">
@@ -72,7 +70,7 @@
 				<div class="sp-slide">
 					<img src="<?php bloginfo('template_directory'); ?>-child/image/slide/vianel_2.jpg" alt="" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
-                        <span>VIANEL</span>
+                        <span>VIANEL NEW YORK</span>
                     </a>
 				</div>
 				<div class="sp-slide">
