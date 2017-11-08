@@ -16,6 +16,9 @@ body{
         max-width: 1050px;
         margin: 0 auto;
         padding-bottom: 0;
+        @media (max-width: 991px){
+            padding: 0 5px;
+        }
         .logoarea{
             background-color: #000;
             z-index: 200;

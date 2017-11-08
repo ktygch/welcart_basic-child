@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "extend.scss";
+
+@media (max-width: 991px){
+    
+    #parent{
+        margin-bottom: 0;
+        box-sizing: border-box;
+        border-top: 1px solid #222;
+        .panel-group{
+            margin-bottom: 0;
+        }
+        
+        .panel{
+            margin: 0 !important;
+            background-color: #000;
+            border: {
+                radius: 0;
+            }
+            box-shadow: none;
+            a{
+                display: block;
+                line-height: 50px;
+                box-sizing: border-box;
+                padding: 0 5%;
+                color: #fff !important;
+                border-bottom: 1px solid #222;
+            }
+            
+            #brandsPanel{
+                .panel-group > a{
+                    padding-left: 8%;
+                }
+                #vianelPanel{
+                    ul > li > a{
+                        padding-left: 13%;
+                    }
+                }
+            }
+            
+            #topsPanel{
+                ul > li > a{
+                    padding-left: 8%;
+                }
+            }
+            
+            #accePanel{
+                ul > li > a{
+                    padding-left: 8%;
+                }
+            }
+        }
+        
+    }
+    
+}

@@ -734,28 +734,41 @@ header#masthead {
   header#masthead .accordion {
     display: none;
     width: 100%;
-    background: #fff; }
-    header#masthead .accordion li.i {
-      display: none;
-      cursor: pointer; }
-      header#masthead .accordion li.i > a {
-        display: block;
-        line-height: 45px;
-        text-align: center;
-        color: #fff !important; }
-      header#masthead .accordion li.i span {
-        display: block;
-        line-height: 45px;
-        text-align: center;
-        color: #fff; }
-      header#masthead .accordion li.i .content {
-        display: none; }
-        header#masthead .accordion li.i .content ul li a {
-          display: block;
-          line-height: 45px;
-          text-align: center;
-          background: #111;
-          color: #fff !important; }
+    background: #fff;
+    /*
+        li.i{
+            display: none;
+            cursor: pointer;
+            & > a{
+                display: block;
+                line-height: 45px;
+                text-align: center;
+                color: #fff !important;
+            }
+            span{
+                display: block;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+            }
+            .content{
+                display: none;
+                ul{
+                    li{
+                        a{
+                            display: block;
+                            line-height: 45px;
+                            text-align: center;
+                            background: #111;
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+        & li.expanded{
+        }
+        */ }
   header#masthead .menulist {
     width: 100%;
     background: #000; }
