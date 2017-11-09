@@ -74,7 +74,7 @@ get_header(); ?>
             
             <?php if( usces_is_cat_of_item( get_query_var('cat') ) ): ?>
                 <?php if (have_posts()) : ?>
-                    <h3 class="v_idx"><span>IPHONE 7 and 8 CASE</span></h3>
+                    <h3 class="v_idx"><span>IPHONE CASE</span></h3>
                     <div class="flex_item">
                         <?php query_posts(array('category__and'=>array(14, 303))); ?>
                         <?php while (have_posts()) : the_post(); ?>
@@ -110,7 +110,7 @@ get_header(); ?>
                         <?php wp_reset_query(); ?>
                     </div>
                     
-                    <h3 class="v_idx"><span>IPHONE 7 PLUS and 8 PLUS CASE</span></h3>
+                    <h3 class="v_idx"><span>IPHONE PLUS CASE</span></h3>
                     <div class="flex_item">
                         <?php query_posts(array('category__and'=>array(14, 304))); ?>
                         <?php while (have_posts()) : the_post(); ?>
