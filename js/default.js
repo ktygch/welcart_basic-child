@@ -319,6 +319,7 @@ $(function(){
 
 
 //フッター　ブランドリスト　#brandSelect
+/*
 var setArea = $('.scrEvent'),
     showHeight = 50;
 
@@ -338,11 +339,8 @@ $(window).on('load scroll resize', function(){
                 opacity: '1',
                 margin: '0 0 10px'
             }, 200);
-        }/*else{
-            setThis.stop().animate({
-                opacity: '0'
-            }, 500);
-        }*/
+        }
     });
     
 });
+*/
