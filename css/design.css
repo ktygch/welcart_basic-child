@@ -2354,11 +2354,11 @@ header.entry-header {
               transform: rotate(-45deg); }
 
 .topic_each_olivia {
-  min-height: 380px;
+  min-height: 390px;
   padding: 0 5px; }
   @media (max-width: 767px) {
     .topic_each_olivia {
-      min-height: 270px; } }
+      min-height: 290px; } }
 
 h1.cart_page_title {
   text-align: center;
