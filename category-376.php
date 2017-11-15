@@ -13,9 +13,15 @@ get_header(); ?>
                 <div class="brand_slide">
                     <div id="slider" class="slider-pro">
                         <div class="sp-slides">
-                            <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/08/Olivia-02_trim.jpg" alt="" class="sp-image">
-                            </div>
+                            <?php if(is_mobile()): ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/11/02-olivia-palermo-vianel-accessories.jpg" alt="" class="sp-image">
+                                </div>
+                            <?php else: ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/11/Olivia-01.jpg" alt="" class="sp-image">
+                                </div>
+                            <?php endif; ?>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8185.jpg" alt="" class="sp-image">
                             </div>
@@ -25,6 +31,15 @@ get_header(); ?>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8132.jpg" alt="" class="sp-image">
                             </div>
+                            <?php if(is_mobile()): ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/11/01-olivia-palermo-vianel-accessories-collaboration.jpg" alt="" class="sp-image">
+                                </div>
+                            <?php else: ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/11/Olivia-03.jpg" alt="" class="sp-image">
+                                </div>
+                            <?php endif; ?>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_264.jpg" alt="" class="sp-image">
                             </div>
@@ -32,25 +47,29 @@ get_header(); ?>
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8199.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/08/Olivia-02_trim.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/11/th_170029_poco8390.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8263.jpg" alt="" class="sp-image">
                             </div>
-                            <div class="sp-slide">
-                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_267.jpg" alt="" class="sp-image">
-                            </div>
-                            <?php if(!is_mobile()): ?>
-                                <?php /* PCのみ表示される */ ?>
+                            <?php if(is_mobile()): ?>
+                                <div class="sp-slide">
+                                    <img src="https://po-co.jp/wp-content/uploads/2017/11/03-olivia-palermo-vianel-accessories.jpg" alt="" class="sp-image">
+                                </div>
+                            <?php else: ?>
                                 <div class="sp-slide">
                                     <img src="https://po-co.jp/wp-content/uploads/2017/09/Olivia-17_1024x1024.jpg" alt="" class="sp-image">
                                 </div>
-                            <?php else: ?>
-                                <?php /* mobi,tabletのみ表示される */ ?>
-                                <div class="sp-slide">
-                                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8258.jpg" alt="" class="sp-image">
-                                </div>
                             <?php endif; ?>
+                            <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8258.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_267.jpg" alt="" class="sp-image">
+                            </div>
                         </div>
                     </div>
                 </div>
