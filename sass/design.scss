@@ -1269,6 +1269,9 @@ header.page-header{//各ページ
 			background-image: url(#{$imgPath}cate_img/her_hipe.jpg);
 		}
 	}
+    .not-found > &{
+        height: 0;
+    }
 }
 
 header.entry-header{

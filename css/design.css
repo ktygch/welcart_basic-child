@@ -1556,6 +1556,9 @@ header.page-header h1 {
 .category-39 header.page-header span, .category-16 header.page-header span {
   background-image: url(../image/cate_img/her_hipe.jpg);
 }
+.not-found > header.page-header {
+  height: 0;
+}
 
 header.entry-header {
   padding: 40px 0 !important;
