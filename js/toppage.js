@@ -39,3 +39,17 @@ $(function(){
         'height': topicH
     });
 });
+
+$(document).ready(function() {
+	var userFeed = new Instafeed({
+		get: 'user', //ユーザーから取得
+		userId: '4142717357', //ユーザーID(数字のみのもの)
+		sortBy:'random', //新→古
+		links: true , //画像リンク取得
+		limit: 4, //取得する画像数を設定
+		resolution: 'standard_resolution', //画像サイズを設定
+		template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" target="_blank"></a></li>',
+		accessToken: '4142717357.233bde8.f2c4875b7c92416d94d3c0d8d5d984c6' //アクセストークン
+	});
+	userFeed.run();
+});

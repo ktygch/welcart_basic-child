@@ -124,6 +124,21 @@
                         <?php wp_reset_query(); ?>
                     </div>
                 </div>
+
+                <div id="instaTop">
+                    <h2 class="center"><span>INSTAGRAM</span></h2>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 insta_wrap">
+                                <ul id="instafeed" class="insta">
+                                </ul>
+                                <div class="instabtn">
+                                    <a href="https://www.instagram.com/po_co_jp/" target="_blank">instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <?php endif; ?>
 		    
 		    <div id="beforeFooter">
@@ -341,13 +356,15 @@
 	
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/jquery.sliderPro.min.js"></script>
 	<?php if(is_front_page()): ?>
-        <?php /*　insta feed
+        <?php /*　insta feed */ ?>
         <script src="<?php bloginfo('template_directory'); ?>-child/js/min/instafeed.js?<?php echo $timestamp; ?>"></script>
-        */ ?>
         <?php if(is_mobile()): ?>
             <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppageMobi.min.js?<?php echo $timestamp; ?>"></script>
         <?php else: ?>
+            <?php /* macbookpro壊れてる間コメントアウト
             <script src="<?php bloginfo('template_directory'); ?>-child/js/min/toppage.min.js?<?php echo $timestamp; ?>"></script>
+            */ ?>
+            <script src="<?php bloginfo('template_directory'); ?>-child/js/toppage.js"></script>
         <?php endif; ?>
 	<?php endif; ?>
 	
