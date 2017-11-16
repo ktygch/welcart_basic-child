@@ -13,14 +13,6 @@ gulp.task("js", function(){
         .pipe(gulp.dest("./js/min"))
 });
 
-gulp.task("js", function(){
-    gulp.src(["js/**/*.js", "!js/min/**/*.js"])
-    .pipe(plumber())
-    .pipe(uglify())
-    .pipe(rename({extname: '.min.js'}))
-    .pipe(gulp.dest("./js/min"));
-});
-
 gulp.task("sass", function(){
 	gulp.src("sass/**/*.scss")
 		.pipe(plumber())

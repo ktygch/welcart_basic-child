@@ -130,7 +130,7 @@
                         </h1>
                     </div>
 
-                    <?php /*PCナビゲーション*/ ?>
+                    <?php /*PCナビゲーション ul.menu*/ ?>
                     <ul class="menu">
                         <li class="menu__multi">
                             <a href="#">BRANDS</a>
@@ -244,7 +244,15 @@
                             <a href="<?php bloginfo('url'); ?>/category/item/itemgenre/books/">BOOKS</a>
                         </li>
                     </ul>
-                    <?php /*PCナビゲーション END*/ ?>
+                    <?php /*PCナビゲーション ul.menu END*/ ?>
+                    
+                    <div class="header_social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/PO-COjp-1208605745854667/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/po_co_jp/" target="_blank">instagram</a></li>
+                            <li><a href="https://twitter.com/POCO_STORE" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
                     
                     <div id="smartMenu">
                         <span></span>
@@ -367,7 +375,13 @@
                             </ul>
                         </div>
                     </div>
-                    
+                    <?php /*
+                    <div class="panel">
+                        <a href="<?php bloginfo('url'); ?>/category/item/homeware/">
+                            HOMEWARE
+                        </a>
+                    </div>
+                    */ ?>
                     <div class="panel">
                         <a href="<?php bloginfo('url'); ?>/category/item/books/">
                             BOOKS
