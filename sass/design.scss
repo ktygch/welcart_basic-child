@@ -1610,6 +1610,9 @@ header.entry-header{
                     box-sizing: border-box;
                     //padding: 0;
                     padding: 0 0 0 10px;
+                    @media (max-width: 767px){
+                        padding: 0;
+                    }
                     li{
                         //width:50%;
                         width: 25%;
@@ -1625,6 +1628,17 @@ header.entry-header{
                             padding-left: 5px;
                         }
                         */
+                        @media (max-width: 767px){
+                            width: 50%;
+                            &:nth-child(odd){
+                                padding-right: 5px;
+                                padding-left: 0;
+                            }
+                            &:nth-child(even){
+                                padding-right: 0;
+                                padding-left: 5px;
+                            }
+                        }
                         a{
                             display: block;
                             width: 100%;

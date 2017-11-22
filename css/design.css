@@ -1599,6 +1599,9 @@ header.entry-header {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       padding: 0 0 0 10px; }
+      @media (max-width: 767px) {
+        #instaTop .container-fluid .row .insta_wrap ul#instafeed {
+          padding: 0; } }
       #instaTop .container-fluid .row .insta_wrap ul#instafeed li {
         width: 25%;
         -webkit-box-sizing: border-box;
@@ -1614,6 +1617,15 @@ header.entry-header {
                             padding-left: 5px;
                         }
                         */ }
+        @media (max-width: 767px) {
+          #instaTop .container-fluid .row .insta_wrap ul#instafeed li {
+            width: 50%; }
+            #instaTop .container-fluid .row .insta_wrap ul#instafeed li:nth-child(odd) {
+              padding-right: 5px;
+              padding-left: 0; }
+            #instaTop .container-fluid .row .insta_wrap ul#instafeed li:nth-child(even) {
+              padding-right: 0;
+              padding-left: 5px; } }
         #instaTop .container-fluid .row .insta_wrap ul#instafeed li a {
           display: block;
           width: 100%; }
