@@ -6,43 +6,43 @@
 
 global $usces; ?>
 
-<div id="secondary" class="widget-area" role="complementary">
+<div <?php /*id="secondary"*/ ?>id="mail_regist" class="widget-area" role="complementary">
 	<?php /*ホームウェジェット（左）*/ ?>
-	<div class="container">
-		<div class="row">
-			<?php if ( ! dynamic_sidebar( 'left-widget-area' ) ){
+    <div class="regist_form_wrap">
+        <?php if ( ! dynamic_sidebar( 'left-widget-area' ) ){
 
-				//Default Welcart Login Widget
-				$args = array(
-					'before_widget' => '<section id="welcart_login-3" class="widget widget_welcart_login">',
-					'after_widget' => '</section>',
-					'before_title' => '<h3 class="widget_title"><span>',
-					'after_title' => '</span></h3>',
-				);
-				$Welcart_login =array(
-					'title' => __('Log-in','usces'),
-					'icon' => 1,
-				);
-				the_widget( 'Welcart_login', $Welcart_login, $args );	
+            //Default Welcart Login Widget
+            $args = array(
+                'before_widget' => '<section id="welcart_login-3" class="widget widget_welcart_login">',
+                'after_widget' => '</section>',
+                'before_title' => '<h3 class="widget_title"><span>',
+                'after_title' => '</span></h3>',
+            );
+            $Welcart_login =array(
+                'title' => __('Log-in','usces'),
+                'icon' => 1,
+            );
+            the_widget( 'Welcart_login', $Welcart_login, $args );	
 
 
-				//Default Welcart Category Widget
-				$args = array(
-					'before_widget' => '<section id="welcart_category-3" class="widget widget_welcart_category">',
-					'after_widget' => '</section>',
-					'before_title' => '<h3 class="widget_title"><span>',
-					'after_title' => '</span></h3>',
-				);
-				$Welcart_category =array(
-					'title' => __('Item Category','usces'),
-					'icon' => 1,
-					'cat_slug' => 'itemgenre'
-				);
-				the_widget( 'Welcart_category', $Welcart_category, $args );	
-			} ?>
-		</div>
-	</div>
-	
+            //Default Welcart Category Widget
+            $args = array(
+                'before_widget' => '<section id="welcart_category-3" class="widget widget_welcart_category">',
+                'after_widget' => '</section>',
+                'before_title' => '<h3 class="widget_title"><span>',
+                'after_title' => '</span></h3>',
+            );
+            $Welcart_category =array(
+                'title' => __('Item Category','usces'),
+                'icon' => 1,
+                'cat_slug' => 'itemgenre'
+            );
+            the_widget( 'Welcart_category', $Welcart_category, $args );
+
+        } ?>
+    </div>
+    <span class="regist_close">閉じる</span>
+    
 	<?php /*ホームウェジェット（中）*/ ?>
 	<?php /*
 	<div class="container-fluid">
@@ -95,7 +95,6 @@ global $usces; ?>
 				?>
 			<?php endif; ?>
 		</div>
-        */ ?>
 	</div>
-
-</div><!-- #secondary -->
+    */ ?>
+</div><!-- x#secondary #mail_regist -->

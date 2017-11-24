@@ -344,3 +344,10 @@ $(window).on('load scroll resize', function(){
     
 });
 */
+
+//メルマガ登録フォーム
+$(function(){
+    $(".regist_close").click(function(){
+        $("#mail_regist").fadeOut('fast');
+    });
+});

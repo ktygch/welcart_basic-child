@@ -231,11 +231,10 @@
                 </div>
                 <p class="copyright"><?php usces_copyright(); ?></p>
             </div>
-            <?php /*↓メルマガ登録フォーム*/ ?>
-            <?php /*
-            <?php get_sidebar('home'); ?>
-            */ ?>
 		</footer><!-- #colophon -->
+		
+        <?php /*↓メルマガ登録フォーム*/ ?>
+        <?php get_sidebar('home'); ?>
 		
 		<div id="toTop" class="wrap fixed">
 			<a href="#masthead">↑</a>

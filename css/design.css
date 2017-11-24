@@ -1176,6 +1176,97 @@ footer {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
 
+#mail_regist {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0 20px;
+  background-color: #000;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10; }
+  #mail_regist .regist_form_wrap {
+    width: 60%;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      #mail_regist .regist_form_wrap {
+        width: 90%; } }
+    #mail_regist .regist_form_wrap h3.widget_title {
+      display: inline-block;
+      margin: 5px auto 15px;
+      line-height: 24px;
+      padding: 3px 8px;
+      color: #fff;
+      border-bottom: 2px solid #fff !important; }
+    #mail_regist .regist_form_wrap .regist_caption {
+      width: 380px;
+      margin: 0 auto;
+      text-align: left; }
+      @media (max-width: 767px) {
+        #mail_regist .regist_form_wrap .regist_caption {
+          width: auto;
+          margin-bottom: 20px; } }
+    #mail_regist .regist_form_wrap form#form-wysija-2 {
+      background-color: #000;
+      color: #fff; }
+      #mail_regist .regist_form_wrap form#form-wysija-2 p.wysija-paragraph {
+        display: inline-block; }
+        @media (max-width: 767px) {
+          #mail_regist .regist_form_wrap form#form-wysija-2 p.wysija-paragraph {
+            display: block; } }
+      #mail_regist .regist_form_wrap form#form-wysija-2 input[type=text] {
+        width: 300px;
+        line-height: 34px;
+        padding: 0 10px;
+        border: 0;
+        color: #ccc; }
+        @media (max-width: 767px) {
+          #mail_regist .regist_form_wrap form#form-wysija-2 input[type=text] {
+            width: 100%;
+            margin: 0 auto; } }
+      #mail_regist .regist_form_wrap form#form-wysija-2 input[type=submit].wysija-submit {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        line-height: 30px;
+        padding: 0 15px;
+        background-color: inherit;
+        border-color: #fff;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 0; }
+    #mail_regist .regist_form_wrap .widget_wysija_cont .updated {
+      background: inherit !important;
+      border: none !important;
+      color: #fff !important; }
+  #mail_regist .regist_close {
+    display: block;
+    width: 20px;
+    height: 0;
+    padding-top: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
+    #mail_regist .regist_close:before, #mail_regist .regist_close:after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%; }
+    #mail_regist .regist_close:before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    #mail_regist .regist_close:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
 .breadcrumbs {
   max-width: 1050px;
   margin: 0 auto;
