@@ -934,60 +934,8 @@ footer{
         box-sizing: border-box;
         margin: 0 auto;
         padding: 0 10px;
-        .footer_credit{
-            //padding-bottom: 90px; SNSアイコン隠しているので下記に変更。アイコン出たら戻し。
-            padding-bottom: 125px;
-            text-align: center;
-            @media (max-width: 767px){
-                padding-bottom: 30px;
-            }
-            .footer_txt_logo{
-                display: block;
-                width: 80%;
-                height: 0;
-                padding-top: 100px;
-                line-height: 100px;
-                overflow: hidden;
-                margin: 20px auto;
-                background: {
-                    //image: url(#{$imgPath}svg/poco_txt_logo_01.svg);
-                    image: url(#{$imgPath}svg/test_poco3.svg);
-                    repeat: no-repeat;
-                    position: center center;
-                    size: contain;
-                }
-                opacity: 0;
-                @media (max-width: 991px){
-                    width: 100%;
-                }
-                @media (max-width: 767px){
-                    //padding-top: 60px;
-                    margin: 0 auto 60px !important;
-                }
-            }
-            p{
-                //margin-bottom: 40px;
-                padding-left: 5px;
-                color: #000;
-                letter-spacing: 1px;
-            }
-            ul{
-                padding-left: 5px;
-                li{
-                    a{
-                        display: block;
-                        line-height: 28px;
-                        font: {
-                            size: 11px;
-                            weight: normal;
-                        }
-                    }
-                }
-            }
-        }
         #sns{
             width: 120px;
-            //width: 80px;
             margin: 0 auto;
             padding-bottom: 20px;
             text-align: center;
@@ -995,7 +943,6 @@ footer{
                 display: flex;
                 justify-content: space-between;
                 li{
-                    //opacity: 0;
                     a{
                         display: block;
                         width: 35px;
@@ -1083,6 +1030,7 @@ footer{
 
 //メルマガ登録フォーム
 #mail_regist{
+    display: none;
     width: 100%;
     box-sizing: border-box;
     padding: 15px 0 20px;
@@ -1102,7 +1050,7 @@ footer{
             display: inline-block;
             margin: 5px auto 15px;
             line-height: 24px;
-            padding: 3px 8px;
+            padding: 3px 5px;
             color: #fff;
             border-bottom: 2px solid #fff !important;
         }
@@ -1161,10 +1109,10 @@ footer{
     }
     .regist_close{
         display: block;
-        width: 20px;
+        width: 50px;
         height: 0;
-        padding-top: 20px;
-        line-height: 20px;
+        padding-top: 50px;
+        line-height: 50px;
         overflow: hidden;
         position: absolute;
         top: 5px;
@@ -1177,7 +1125,8 @@ footer{
             height: 1px;
             background: #fff;
             position: absolute;
-            top: 50%;
+            top: 30%;
+            right: 10%;
         }
         &:before{
             transform: rotate(45deg);

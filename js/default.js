@@ -320,7 +320,7 @@ $(function(){
 
 //フッター　ブランドリスト　#brandSelect
 /*
-var setArea = $('.scrEvent'),
+var setArea = $('.scrEvent'),//li.each_brandから.scrEventトリ17/11/27メルマガ登録フォーム設置に伴い
     showHeight = 50;
 
 setArea.css({
@@ -346,6 +346,39 @@ $(window).on('load scroll resize', function(){
 */
 
 //メルマガ登録フォーム
+/*
+$(function(){
+    if($.cookie("access")){
+        $('#first').css({display: 'none'});
+    }
+    $(window).load(function(){
+        $.cookie("access",$('body').addClass('access'));
+    });
+});
+*/
+
+var setArea = $('#primary'),
+    showHeight = 300;
+
+$('#mail_regist').css({
+    display: 'block',
+    opacity: '0'
+});
+
+$(window).on('load scroll resize', function(){
+    setArea.each(function(){
+        var setThis = $(this),
+            areaTop = setThis.offset().top;
+        
+        if($(window).scrollTop() > (areaTop + showHeight)-$(window).height()){
+            $('#mail_regist').stop()
+                .animate({opacity: '1'}, 200);
+        }else{
+            $('#mail_regist').stop().animate({opacity: '0'}, 200);
+        }
+    });
+});
+
 $(function(){
     $(".regist_close").click(function(){
         $("#mail_regist").fadeOut('fast');

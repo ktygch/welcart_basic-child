@@ -12,49 +12,49 @@
             <div id="brandSelect">
                 <h2><span>BRANDS</span></h2>
                 <ul>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/" class="ilu">
                             <h3><span>I LOVE UGLY</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/" class="vianel">
                             <h3><span>VIANEL</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/" class="parra">
                             <h3><span>BY PARRA</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/" class="camar">
                             <h3><span>CAMAR</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/" class="applebum">
                             <h3><span>APPLEBUM</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/" class="tno">
                             <h3><span>THE NEW ORDER MAGAZINE</span></h3>
                             <span class="brandimg">
                             </span>
                         </a>
                     </li>
-                    <li class="each_brand scrEvent">
+                    <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/" class="her">
                             <h3><span>HER. MAGAZINE</span></h3>
                             <span class="brandimg">
@@ -129,9 +129,6 @@
                     <h2 class="center"><span>INSTAGRAM</span></h2>
                     <div class="container-fluid">
                         <div class="row">
-                            <?php /*
-                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 insta_wrap">
-                            */ ?>
                             <div class="insta_wrap">
                                 <ul id="instafeed" class="insta">
                                 </ul>
@@ -217,11 +214,6 @@
 		
 		<footer id="colophon" role="contentinfo">
             <div class="inner">
-                <?php /*
-                <div class="footer_credit">
-                    <a href="<?php bloginfo('url'); ?>" class="footer_txt_logo">POST-CONTEMPORARY</a>
-                </div>
-                */ ?>
                 <div id="sns">
                     <ul>
                         <li><a href="https://www.facebook.com/PO-COjp-1208605745854667/" target="_blank">Facebook</a></li>
@@ -347,16 +339,6 @@
     */ ?>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/default.min.js?<?php echo $timestamp; ?>"></script>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/bs/bootstrap.min.js"></script>
-	
-    <?php /*
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>-child/js/min/drawer.min.js" charset="utf-8"></script>
-    <script>
-        $(document).ready(function() {
-            $('.drawer').drawer();
-        });
-    </script>
-    */ ?>
 	
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/jquery.sliderPro.min.js"></script>
 	<?php if(is_front_page()): ?>

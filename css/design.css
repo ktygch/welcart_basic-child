@@ -1066,42 +1066,6 @@ footer {
             box-sizing: border-box;
     margin: 0 auto;
     padding: 0 10px; }
-    footer .inner .footer_credit {
-      padding-bottom: 125px;
-      text-align: center; }
-      @media (max-width: 767px) {
-        footer .inner .footer_credit {
-          padding-bottom: 30px; } }
-      footer .inner .footer_credit .footer_txt_logo {
-        display: block;
-        width: 80%;
-        height: 0;
-        padding-top: 100px;
-        line-height: 100px;
-        overflow: hidden;
-        margin: 20px auto;
-        background-image: url(../image/svg/test_poco3.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        opacity: 0; }
-        @media (max-width: 991px) {
-          footer .inner .footer_credit .footer_txt_logo {
-            width: 100%; } }
-        @media (max-width: 767px) {
-          footer .inner .footer_credit .footer_txt_logo {
-            margin: 0 auto 60px !important; } }
-      footer .inner .footer_credit p {
-        padding-left: 5px;
-        color: #000;
-        letter-spacing: 1px; }
-      footer .inner .footer_credit ul {
-        padding-left: 5px; }
-        footer .inner .footer_credit ul li a {
-          display: block;
-          line-height: 28px;
-          font-size: 11px;
-          font-weight: normal; }
     footer .inner #sns {
       width: 120px;
       margin: 0 auto;
@@ -1177,6 +1141,7 @@ footer {
               transform: rotate(-45deg); }
 
 #mail_regist {
+  display: none;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1197,7 +1162,7 @@ footer {
       display: inline-block;
       margin: 5px auto 15px;
       line-height: 24px;
-      padding: 3px 8px;
+      padding: 3px 5px;
       color: #fff;
       border-bottom: 2px solid #fff !important; }
     #mail_regist .regist_form_wrap .regist_caption {
@@ -1243,10 +1208,10 @@ footer {
       color: #fff !important; }
   #mail_regist .regist_close {
     display: block;
-    width: 20px;
+    width: 50px;
     height: 0;
-    padding-top: 20px;
-    line-height: 20px;
+    padding-top: 50px;
+    line-height: 50px;
     overflow: hidden;
     position: absolute;
     top: 5px;
@@ -1259,7 +1224,8 @@ footer {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 50%; }
+      top: 30%;
+      right: 10%; }
     #mail_regist .regist_close:before {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg); }
