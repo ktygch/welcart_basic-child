@@ -346,17 +346,6 @@ $(window).on('load scroll resize', function(){
 */
 
 //メルマガ登録フォーム
-/*
-$(function(){
-    if($.cookie("access")){
-        $('#first').css({display: 'none'});
-    }
-    $(window).load(function(){
-        $.cookie("access",$('body').addClass('access'));
-    });
-});
-*/
-
 var setArea = $('#primary'),
     showHeight = 300;
 
@@ -382,5 +371,12 @@ $(window).on('load scroll resize', function(){
 $(function(){
     $(".regist_close").click(function(){
         $("#mail_regist").fadeOut('fast');
+        $.cookie("unnecessary",$('body').addClass('unnecessary'),{expries: 10, path: '/'});
     });
+});
+
+$(function(){
+    if($.cookie("unnecessary")){
+        $('#newsLetter').css({display:'none'});
+    }
 });

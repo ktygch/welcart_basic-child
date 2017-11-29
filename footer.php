@@ -225,9 +225,11 @@
             </div>
 		</footer><!-- #colophon -->
 		
-        <?php /*↓メルマガ登録フォーム*/ ?>
-        <?php get_sidebar('home'); ?>
-		
+        <div id="newsLetter">
+            <?php /*↓メルマガ登録フォーム*/ ?>
+            <?php get_sidebar('home'); ?>
+        </div>
+    
 		<div id="toTop" class="wrap fixed">
 			<a href="#masthead">↑</a>
 		</div>
@@ -339,6 +341,8 @@
     */ ?>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/default.min.js?<?php echo $timestamp; ?>"></script>
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/bs/bootstrap.min.js"></script>
+	
+	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/jquery.cookie.js"></script>
 	
 	<script src="<?php bloginfo('template_directory'); ?>-child/js/min/jquery.sliderPro.min.js"></script>
 	<?php if(is_front_page()): ?>
