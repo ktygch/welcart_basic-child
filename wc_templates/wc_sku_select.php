@@ -161,11 +161,13 @@ get_header();
 
                                     <?php do_action( 'usces_action_single_item_outform' ); ?>
                                     
+                                    <?php /*
                                     <div class="center padding10">
                                         お気に入り登録
                                         <?php wpfp_link(); ?>
                                     </div>
-
+                                    */ ?>
+                                    
                                     <div class="item-description">
                                         <div class="prod_summary">
                                             <div class="tab">
@@ -292,7 +294,7 @@ get_header();
 <?php if(!is_mobile()): ?>
     <?php $timestamp = time() ?>
     <?php /* カートスクロール追尾 モバイルは排除 */ ?>
-    <script src="<?php bloginfo('template_directory'); ?>-child/js/min/scrollfix.js?<?php echo $timestamp; ?>"></script>
+    <script src="<?php bloginfo('template_directory'); ?>-child/js/min/scrollfix.min.js?<?php echo $timestamp; ?>"></script>
 <?php endif; ?>
 
 <?php endswitch; ?>

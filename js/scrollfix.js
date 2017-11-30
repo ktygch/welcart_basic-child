@@ -23,7 +23,7 @@
                 }else if(winTop >= fixTop){
                     fix.css({
                     position: 'fixed',
-                    top: 90
+                    top: 60
                     });
                 }else{
                     fix.css('position', 'static');
