@@ -132,7 +132,7 @@
                             <div class="insta_wrap">
                                 <ul id="instafeed" class="insta">
                                 </ul>
-                                <?php /*
+                                <?php /* アカウントへ遷移するアイコン　離脱回避のためコメントアウト
                                 <div class="instabtn">
                                     <a href="https://www.instagram.com/po_co_jp/" target="_blank">instagram</a>
                                 </div>
@@ -224,11 +224,13 @@
                 <p class="copyright"><?php usces_copyright(); ?></p>
             </div>
 		</footer><!-- #colophon -->
-		
-        <div id="newsLetter">
-            <?php /*↓メルマガ登録フォーム*/ ?>
-            <?php get_sidebar('home'); ?>
-        </div>
+        
+        <?php if(!is_page(get_option('usces_cart_number'))): ?>
+            <?php /*カートページでは無い場合 メルマガ登録フォーム出現*/ ?>
+            <div id="newsLetter">
+                <?php get_sidebar('home'); ?>
+            </div>
+        <?php endif; ?>
     
 		<div id="toTop" class="wrap fixed">
 			<a href="#masthead">↑</a>
@@ -355,37 +357,34 @@
         <?php endif; ?>
 	<?php endif; ?>
 	
-    <?php if(!is_page(get_option('usces_cart_number'))): ?>
-        <?php /*カートページでは無い場合*/ ?>
-    <?php endif; ?><?php /*アイコン虫眼鏡へ変更時、分岐外す*/ ?>
-        <script>
-            //ヘッダー 隠しメニュー　アコーディオン
-            $(function(){
-                $('.switch').on('click', function(e){
-                    e.preventDefault();
-                    e.stopPropagation();
-                    //$('#hiddenNav').slideToggle(400);
+    <script>
+        //ヘッダー 隠しメニュー　アコーディオン
+        $(function(){
+            $('.switch').on('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                //$('#hiddenNav').slideToggle(400);
 
-                    var $this = $('#hiddenNav')
+                var $this = $('#hiddenNav')
 
-                    if($this.hasClass('open')){
-                        $this.removeClass('open').slideUp(400);
-                        $('.switch').removeClass('open');
-                        //$('html').off('click', closeItems);
-                    } else {
-                        $this.addClass('open').slideDown(400);
-                        $('.switch').addClass('open');
-                        //$('html').on('click', closeItems);
-                    }
-                    /*
-                    function closeItems(){
-                        $this.removeClass('open').slideUp(400);
-                        $('.switch').removeClass('open');
-                    }
-                    */
-                })
-            });
-        </script>
+                if($this.hasClass('open')){
+                    $this.removeClass('open').slideUp(400);
+                    $('.switch').removeClass('open');
+                    //$('html').off('click', closeItems);
+                } else {
+                    $this.addClass('open').slideDown(400);
+                    $('.switch').addClass('open');
+                    //$('html').on('click', closeItems);
+                }
+                /*
+                function closeItems(){
+                    $this.removeClass('open').slideUp(400);
+                    $('.switch').removeClass('open');
+                }
+                */
+            })
+        });
+    </script>
 	
 	<?php if(is_category(array(12,13,14,15,16,309,332,376, 29,30)) && !is_paged()): ?>
         <script>
