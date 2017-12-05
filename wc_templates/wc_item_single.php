@@ -276,10 +276,12 @@ get_header();
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
+<?php /*
 <?php if(!is_mobile()): ?>
     <?php $timestamp = time() ?>
-    <?php /* カートスクロール追尾 モバイルは排除 */ ?>
+    <?php /* カートスクロール追尾 モバイルは排除
     <script src="<?php bloginfo('template_directory'); ?>-child/js/min/scrollfix.min.js?<?php echo $timestamp; ?>"></script>
 <?php endif; ?>
+*/ ?>
 
 <?php endswitch; ?>

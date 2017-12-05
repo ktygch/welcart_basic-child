@@ -1988,7 +1988,8 @@ header.entry-header{
                             padding-top: 20px;
                             padding-bottom: 30px;
                             @media (max-width: 991px) and (min-width: 768px){
-                                width: 300px;
+                                //width: 300px;
+                                width: 95%;
                             }
                             @media (max-width: 767px){
                                 width: 100%;
@@ -2124,11 +2125,11 @@ header.entry-header{
                                 }
                                 .prod_summary{
                                     .tab{
-                                        //padding: 0 10px;
                                         padding: 0;
                                         .tab-menu{
                                             display: flex;
-                                            justify-content: space-between;
+                                            //justify-content: space-between;
+                                            justify-content: space-around;
                                             margin: 0 0 10px;
                                             padding: 0 5px;
                                             li{
@@ -2512,6 +2513,72 @@ header.entry-header{
         position: center !important;
         size: contain !important;
         //color: #000;
+    }
+}
+
+#sizeGuide{//モーダルウィンドウ表示
+    .modal-dialog{
+        @media (max-width: 767px){
+            margin: 10px 0;
+        }
+        .modal-content{
+            .modal-header{
+                padding: 10px 15px;
+                border-bottom: 0;
+                @media (max-width: 767px){
+                    padding: 10px;
+                }
+                h4{
+                    margin: 0 !important;
+                }
+            }
+            .modal-body{
+                padding: 0 15px;
+                @media (max-width: 767px){
+                    padding: 0;
+                }
+                table{
+                    margin-bottom: 0;
+                    @media (max-width: 767px){
+                        width: 95%;
+                        margin: 0 auto;
+                        th{
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                padding: 10px 15px;
+                border-top: 0;
+                .close{
+                    .close_btn{
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        position: relative;
+                        &:before, &:after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 14px;
+                            background: #000;
+                            position: absolute;
+                            top: 0;
+                        }
+                        &:before{
+                            transform: rotate(45deg);
+                            left: 50%;
+                            margin-left: -1px;
+                        }
+                        &:after{
+                            transform: rotate(-45deg);
+                            right: 50%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

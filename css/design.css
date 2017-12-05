@@ -1910,7 +1910,7 @@ header.entry-header {
       padding-bottom: 30px; }
       @media (max-width: 991px) and (min-width: 768px) {
         #content.item_wrap article .storycontent.container #itempage #side .fixedbutton .inner {
-          width: 300px; } }
+          width: 95%; } }
       @media (max-width: 767px) {
         #content.item_wrap article .storycontent.container #itempage #side .fixedbutton .inner {
           width: 100%;
@@ -2015,9 +2015,8 @@ header.entry-header {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             margin: 0 0 10px;
             padding: 0 5px; }
             #content.item_wrap article .storycontent.container #itempage #side .fixedbutton .inner .item-description .prod_summary .tab .tab-menu li {
@@ -2279,6 +2278,59 @@ header.entry-header {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: contain !important; }
+
+@media (max-width: 767px) {
+  #sizeGuide .modal-dialog {
+    margin: 10px 0; } }
+
+#sizeGuide .modal-dialog .modal-content .modal-header {
+  padding: 10px 15px;
+  border-bottom: 0; }
+  @media (max-width: 767px) {
+    #sizeGuide .modal-dialog .modal-content .modal-header {
+      padding: 10px; } }
+  #sizeGuide .modal-dialog .modal-content .modal-header h4 {
+    margin: 0 !important; }
+
+#sizeGuide .modal-dialog .modal-content .modal-body {
+  padding: 0 15px; }
+  @media (max-width: 767px) {
+    #sizeGuide .modal-dialog .modal-content .modal-body {
+      padding: 0; } }
+  #sizeGuide .modal-dialog .modal-content .modal-body table {
+    margin-bottom: 0; }
+    @media (max-width: 767px) {
+      #sizeGuide .modal-dialog .modal-content .modal-body table {
+        width: 95%;
+        margin: 0 auto; }
+        #sizeGuide .modal-dialog .modal-content .modal-body table th {
+          padding: 5px; } }
+
+#sizeGuide .modal-dialog .modal-content .modal-footer {
+  padding: 10px 15px;
+  border-top: 0; }
+  #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: relative; }
+    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before, #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 14px;
+      background: #000;
+      position: absolute;
+      top: 0; }
+    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      left: 50%;
+      margin-left: -1px; }
+    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      right: 50%; }
 
 .flex_topic {
   -webkit-box-sizing: border-box;

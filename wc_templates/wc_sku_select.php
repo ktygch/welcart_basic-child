@@ -173,7 +173,9 @@ get_header();
                                             <div class="tab">
                                                 <ul class="tab-menu">
                                                     <li class="selected"><a href="#" data-tabid="1">DESCRIPTION</a></li>
+                                                    <?php /*
                                                     <li><a href="#" data-tabid="2">DETAIL</a></li>
+                                                    */ ?>
                                                     <li><a href="#" data-tabid="3">SHIPPING</a></li>
                                                     <li><a href="#" data-tabid="4">RETURN</a></li>
                                                 </ul>
@@ -291,10 +293,12 @@ get_header();
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
+<?php /*
 <?php if(!is_mobile()): ?>
     <?php $timestamp = time() ?>
-    <?php /* カートスクロール追尾 モバイルは排除 */ ?>
+    <?php /* カートスクロール追尾 モバイルは排除 
     <script src="<?php bloginfo('template_directory'); ?>-child/js/min/scrollfix.min.js?<?php echo $timestamp; ?>"></script>
 <?php endif; ?>
+*/ ?>
 
 <?php endswitch; ?>
