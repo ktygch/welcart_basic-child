@@ -317,7 +317,6 @@ $(function(){
     });
 });
 
-
 //フッター　ブランドリスト　#brandSelect
 /*
 var setArea = $('.scrEvent'),//li.each_brandから.scrEventトリ17/11/27メルマガ登録フォーム設置に伴い

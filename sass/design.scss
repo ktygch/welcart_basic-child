@@ -1048,7 +1048,7 @@ footer{
         }
         h3.widget_title{
             display: inline-block;
-            margin: 5px auto 15px;
+            margin: 5px auto 10px;
             line-height: 24px;
             padding: 3px 5px;
             color: #fff;
@@ -1057,7 +1057,7 @@ footer{
         .regist_caption{
             width: 380px;
             margin: 0 auto;
-            text-align: left;
+            text-align: center;
             @media (max-width: 767px){
                 width: auto;
                 margin-bottom: 20px;
@@ -1089,6 +1089,7 @@ footer{
                     box-sizing: border-box;
                     line-height: 30px;
                     padding: 0 15px;
+                    margin-top: 10px;
                     background-color: inherit;
                     border: {
                         color: #fff;
