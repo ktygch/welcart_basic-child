@@ -2284,54 +2284,54 @@ header.entry-header {
   #sizeGuide .modal-dialog {
     margin: 10px 0; } }
 
-#sizeGuide .modal-dialog .modal-content .modal-header {
-  padding: 10px 15px;
-  border-bottom: 0; }
-  @media (max-width: 767px) {
-    #sizeGuide .modal-dialog .modal-content .modal-header {
-      padding: 10px; } }
-  #sizeGuide .modal-dialog .modal-content .modal-header h4 {
-    margin: 0 !important; }
-
-#sizeGuide .modal-dialog .modal-content .modal-body {
-  padding: 0 15px; }
-  @media (max-width: 767px) {
-    #sizeGuide .modal-dialog .modal-content .modal-body {
-      padding: 0; } }
-  #sizeGuide .modal-dialog .modal-content .modal-body table {
-    margin-bottom: 0; }
+#sizeGuide .modal-dialog .modal-content {
+  border-radius: 0; }
+  #sizeGuide .modal-dialog .modal-content .modal-header {
+    padding: 10px 15px;
+    border-bottom: 0; }
     @media (max-width: 767px) {
-      #sizeGuide .modal-dialog .modal-content .modal-body table {
-        width: 95%;
-        margin: 0 auto; }
-        #sizeGuide .modal-dialog .modal-content .modal-body table th {
-          padding: 5px; } }
-
-#sizeGuide .modal-dialog .modal-content .modal-footer {
-  padding: 10px 15px;
-  border-top: 0; }
-  #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn {
-    display: block;
-    width: 15px;
-    height: 15px;
-    position: relative; }
-    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before, #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
-      content: "";
+      #sizeGuide .modal-dialog .modal-content .modal-header {
+        padding: 10px; } }
+    #sizeGuide .modal-dialog .modal-content .modal-header h4 {
+      margin: 0 !important; }
+  #sizeGuide .modal-dialog .modal-content .modal-body {
+    padding: 0 15px; }
+    @media (max-width: 767px) {
+      #sizeGuide .modal-dialog .modal-content .modal-body {
+        padding: 0; } }
+    #sizeGuide .modal-dialog .modal-content .modal-body table {
+      margin-bottom: 0; }
+      @media (max-width: 767px) {
+        #sizeGuide .modal-dialog .modal-content .modal-body table {
+          width: 95%;
+          margin: 0 auto; }
+          #sizeGuide .modal-dialog .modal-content .modal-body table th {
+            padding: 5px; } }
+  #sizeGuide .modal-dialog .modal-content .modal-footer {
+    padding: 10px 15px;
+    border-top: 0; }
+    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn {
       display: block;
-      width: 1px;
-      height: 14px;
-      background: #000;
-      position: absolute;
-      top: 0; }
-    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      left: 50%;
-      margin-left: -1px; }
-    #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      right: 50%; }
+      width: 15px;
+      height: 15px;
+      position: relative; }
+      #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before, #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 14px;
+        background: #000;
+        position: absolute;
+        top: 0; }
+      #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        left: 50%;
+        margin-left: -1px; }
+      #sizeGuide .modal-dialog .modal-content .modal-footer .close .close_btn:after {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        right: 50%; }
 
 .flex_topic {
   -webkit-box-sizing: border-box;
@@ -3597,7 +3597,7 @@ ul.ucart_search_body.ucart_widget_body {
   bottom: 0;
   left: 0;
   z-index: 3;
-  background-image: url(../image/sale/plants2.jpg);
+  background-image: url(../image/sale/winter_wreath.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -3606,7 +3606,7 @@ ul.ucart_search_body.ucart_widget_body {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 0;
     left: 0;
@@ -3619,7 +3619,7 @@ ul.ucart_search_body.ucart_widget_body {
     width: 310px;
     height: 270px;
     margin: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 49, 78, 0.45);
     position: relative; }
     .modalSaleBanner a .inner {
       width: 100%;
@@ -3630,7 +3630,7 @@ ul.ucart_search_body.ucart_widget_body {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url(../image/sale/top_sale_banner.svg);
+      background-image: url(../image/sale/top_sale_winter2017_4.svg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -3734,7 +3734,7 @@ ul.ucart_search_body.ucart_widget_body {
   line-height: 24px;
   padding: 0 5px;
   margin: 5px;
-  background-color: #333 !important;
+  background-color: #000 !important;
   color: #fff !important;
   font-size: 12px;
   font-family: arial;
@@ -3749,7 +3749,7 @@ ul.ucart_search_body.ucart_widget_body {
           box-sizing: border-box;
   padding: 20px;
   margin: 0 auto 60px;
-  background-image: url(../image/sale/plants2.jpg);
+  background-image: url(../image/sale/winter_wreath.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3759,7 +3759,7 @@ ul.ucart_search_body.ucart_widget_body {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 0;
     left: 0; }
@@ -3771,7 +3771,7 @@ ul.ucart_search_body.ucart_widget_body {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 49, 78, 0.45);
     position: relative;
     z-index: 2; }
     .top_sale_banner a .inner {
@@ -3784,7 +3784,7 @@ ul.ucart_search_body.ucart_widget_body {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url(../image/sale/top_sale_banner.svg);
+      background-image: url(../image/sale/top_sale_winter2017_4.svg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;

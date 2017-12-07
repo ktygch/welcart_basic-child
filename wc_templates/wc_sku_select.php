@@ -173,7 +173,9 @@ get_header();
                                             <div class="tab">
                                                 <ul class="tab-menu">
                                                     <li class="selected"><a href="#" data-tabid="1">DESCRIPTION</a></li>
+                                                    <?php /*
                                                     <li><a href="#" data-tabid="2">DETAIL</a></li>
+                                                    */ ?>
                                                     <li><a href="#" data-tabid="3">SHIPPING</a></li>
                                                     <li><a href="#" data-tabid="4">RETURN</a></li>
                                                 </ul>
