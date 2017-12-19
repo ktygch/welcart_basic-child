@@ -167,13 +167,27 @@ get_header();
                                                     <?php the_content(); ?>
                                                     <div data-contentid="3" class="kakusu">
                                                         <h4>配送料</h4>
-                                                        <ul>
-                                                            <li>本州、四国地方 756円</li>
-                                                            <li>北海道、沖縄、その他離島エリア　1,080円</li>
-                                                        </ul>
-                                                        <div>
-                                                           10,000円以上のご注文より送料無料とさせて頂きます。 
-                                                        </div>
+                                                        <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
+                                                        ?>
+                                                            <div class="padding0">
+                                                                <s>
+                                                                   10,000円以上のご注文より送料無料とさせて頂きます。 
+                                                                </s>
+                                                            </div>
+                                                            <p class="red margin0">セール期間中の送料につきまして</p>
+                                                            <div>
+                                                                SALEキャンペーン中は、ご注文頂いてから、送料を再計算して<br>
+                                                                ご連絡差し上げる形となります。ご了承下さい。
+                                                            </div>
+                                                        <?php else: ?>
+                                                            <ul>
+                                                                <li>本州、四国地方 756円</li>
+                                                                <li>北海道、沖縄、その他離島エリア　1,080円</li>
+                                                            </ul>
+                                                            <div>
+                                                               10,000円以上のご注文より送料無料とさせて頂きます。 
+                                                            </div>
+                                                        <?php endif; ?>
                                                         <h4>
                                                             代引手数料
                                                         </h4>

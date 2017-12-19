@@ -50,7 +50,7 @@ function is_mobile(){
 }
 
 //請求書 キャンペーン値引き 非表示
-/*キャンペーン中はコメントアウト*/
+/*キャンペーン中はコメントアウト
 add_filter( 'usces_filter_disnount_label', 'my_usces_filter_disnount_label' );
 function my_usces_filter_point_label() {
     return null;
@@ -58,4 +58,4 @@ function my_usces_filter_point_label() {
 add_filter( 'usces_filter_disnount_vlue', 'my_usces_filter_disnount_vlue' );
 function my_usces_filter_point_vlue() {
     return null;
-}
+}*/

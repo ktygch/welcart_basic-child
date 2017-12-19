@@ -256,9 +256,19 @@
 	                <h3><span>SHIPPING</span></h3>
 	                <p>配送料について</p>
 	                <div class="section">
-	                    <h4>10,000円以上のお買い物で配送料無料</h4>
-	                    本州、四国地方 756円<br>
-	                    北海道、沖縄、その他離島エリア　1,080円
+                        <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
+                        ?>
+                            <h4 class="margin0"><s>10,000円以上のお買い物で配送料無料</s></h4>
+                            <p class="red margin0">セール期間中の送料につきまして</p>
+                            <div>
+                                SALEキャンペーン中は、ご注文頂いてから、送料を再計算して<br>
+                                ご連絡差し上げる形となります。ご了承下さい。
+                            </div>
+                        <?php else: ?>
+                            <h4>10,000円以上のお買い物で配送料無料</h4>
+                            本州、四国地方 756円<br>
+                            北海道、沖縄、その他離島エリア　1,080円
+                        <?php endif; ?>
 	                </div>
 	                <div class="section">
 	                    <h4>返品での配送料につきまして</h4>
