@@ -258,11 +258,13 @@
 	                <div class="section">
                         <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
                         ?>
-                            <h4 class="margin0"><s>10,000円以上のお買い物で配送料無料</s></h4>
-                            <p class="red margin0">セール期間中の送料につきまして</p>
-                            <div>
-                                SALEキャンペーン中は、ご注文頂いてから、送料を再計算して<br>
-                                ご連絡差し上げる形となります。ご了承下さい。
+                            <h4 class="margin0">
+                                <s>10,000円以上のお買い物で配送料無料</s>
+                            </h4>
+                            <p class="red margin0 bold">SALE期間中の送料につきまして</p>
+                            <div class="red">
+                                SALE期間中はシステムの都合上、ご注文頂いてから、送料を再計算して<br class="hidden-xs">
+                                ご連絡差し上げる形となります。ご不便をおかけしますが何卒ご了承下さい。<br>（合計金額10,000円以上の送料無料に変わりはございません）
                             </div>
                         <?php else: ?>
                             <h4>10,000円以上のお買い物で配送料無料</h4>

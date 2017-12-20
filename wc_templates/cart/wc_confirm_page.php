@@ -201,12 +201,12 @@ get_header();
                                 <?php endif; ?>
                                 </table>
 
-                                <?php usces_purchase_button(); ?>
-
                                 <div class="footer_explanation">
                                     <?php do_action( 'usces_action_confirm_page_footer' ); ?>
                                 </div><!-- .footer_explanation -->
-
+                                
+                                <?php usces_purchase_button(); ?>
+                                
                             </div><!-- #info-confirm -->
 
                         </article><!-- .post -->

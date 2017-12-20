@@ -3742,6 +3742,13 @@ ul.ucart_search_body.ucart_widget_body {
   #itempage .campaign_message {
     margin: 0 5px 15px 0 !important; }
 
+.sale_sending_inform {
+  text-align: center; }
+  .sale_sending_inform p {
+    margin: 0; }
+  .sale_sending_inform div {
+    line-height: 1.6em; }
+
 .top_sale_banner {
   width: 75%;
   height: 310px;

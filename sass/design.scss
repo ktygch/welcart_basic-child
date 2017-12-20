@@ -4528,6 +4528,17 @@ ul.ucart_search_body.ucart_widget_body{
     }
 }
 
+//セール期間中のカート内送料お断りテキスト
+.sale_sending_inform{
+    text-align: center;
+    p{
+        margin: 0;
+    }
+    div{
+        line-height: 1.6em;
+    }
+}
+
 .top_sale_banner{
     width: 75%;
     height: 310px;
