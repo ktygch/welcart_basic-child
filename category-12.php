@@ -17,19 +17,22 @@ get_header(); ?>
                                 <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu001.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
-                                <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu002.jpg" alt="" class="sp-image">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/12/th_25012882_307705049724542_737245279685705728_n_trim.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
+                                <img src="https://po-co.jp/wp-content/uploads/2017/12/th_25036568_1597183247024686_9052967491399057408_n_trim.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu003.jpg" alt="" class="sp-image">
+                            </div>
+                            <div class="sp-slide">
+                                <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu002.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu004.jpg" alt="" class="sp-image">
                             </div>
                             <div class="sp-slide">
                                 <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu005.jpg" alt="" class="sp-image">
-                            </div>
-                            <div class="sp-slide">
-                                <img src="<?php bloginfo('template_directory'); ?>-child/image/ilu/ilu006.jpg" alt="" class="sp-image">
                             </div>
                         </div>
                     </div>

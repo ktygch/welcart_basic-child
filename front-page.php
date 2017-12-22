@@ -4,103 +4,87 @@
 			<div class="sp-slides">
                 <?php /*特集記事*/ ?>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_264.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170929_264.jpg" alt="VIANEL NEW YORK" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">
-                        <?php /*<span>VIANEL NEW YORK</span>*/ ?>
                     </a>
                 </div>
                 
 			    <?php /*スライド1巡目*/ ?>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/11/ilu001.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_Mid-Rise.jpg" alt="I LOVE UGLY" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">
-                        <?php /*<span>I LOVE UGLY</span>*/ ?>
-                    </a>
-                </div>
-                <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_170029_poco8321.jpg" class="sp-image" alt="">
-                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
-                        <?php /*<span>VIANEL NEW YORK</span>*/ ?>
                     </a>
                 </div>
 				<div class="sp-slide">
 				    <?php if(is_mobile()): ?>
-                        <img src="<?php bloginfo('template_directory'); ?>-child/image/slide/parra_2_sp.jpg" alt="" class="sp-image">
+                        <img src="<?php bloginfo('template_directory'); ?>-child/image/slide/parra_2_sp.jpg" alt="by Parra" class="sp-image">
 				    <?php else: ?>
-                        <img src="https://po-co.jp/wp-content/uploads/2017/10/th_171016_poco_113.jpg" alt="" class="sp-image">
+                        <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_038.jpg" alt="by Parra" class="sp-image">
 				    <?php endif; ?>
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">
-                        <?php /*<span>BY PARRA</span>*/ ?>
                     </a>
 				</div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/07/camar_image2.jpg" class="sp-image" alt="">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_camar_image5.jpg" alt="CAMAR" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">
-                        <?php /*<span>CAMAR</span>*/ ?>
                     </a>
                 </div>
-                
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_1.jpg" class="sp-image" alt="">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_170029_poco8124.jpg" alt="VIANEL NEW YORK" class="sp-image">
+                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
+                    </a>
+                </div>
+                <div class="sp-slide">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_2.jpg" alt="APPLEBUM" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">
-                        <?php /*<span>APPLEBUM</span>*/ ?>
                     </a>
                 </div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_171016_poco_248.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_301.jpg" alt="THE NEW ORDER MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">
-                        <?php /*<span>THE NEW ORDER MAGAZINE</span>*/ ?>
                     </a>
                 </div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_171016_poco_215.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_269.jpg" alt="HER. MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">
-                        <?php /*<span>HER. MAGAZINE</span>*/ ?>
                     </a>
                 </div>
 			    <?php /*スライド1巡目 end*/ ?>
                 
                 <?php /*スライド2巡目*/ ?>
 				<div class="sp-slide">
-					<img src="https://po-co.jp/wp-content/uploads/2017/09/th_IMG_9573.jpg" alt="" class="sp-image">
+					<img src="https://po-co.jp/wp-content/uploads/2017/12/th_Cropped-Web.png" alt="I LOVE UGLY" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/iloveugly/">
-                        <?php /*<span>I LOVE UGLY</span>*/ ?>
                     </a>
 				</div>
 				<div class="sp-slide">
-					<img src="<?php bloginfo('template_directory'); ?>-child/image/slide/vianel_2.jpg" alt="" class="sp-image">
-                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
-                        <?php /*<span>VIANEL NEW YORK</span>*/ ?>
-                    </a>
-				</div>
-				<div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_171016_poco_093.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_164.jpg" alt="by Parra" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/byparra/">
-                        <?php /*<span>BY PARRA</span>*/ ?>
                     </a>
 				</div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/07/camar_image.jpg" class="sp-image" alt="">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_camar_image4.jpg" alt="CAMAR" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">
-                        <?php /*<span>CAMAR</span>*/ ?>
                     </a>
                 </div>
+				<div class="sp-slide">
+					<img src="https://po-co.jp/wp-content/uploads/2017/12/th_170029_poco8132.jpg" alt="VIANEL NEW YORK" class="sp-image">
+                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
+                    </a>
+				</div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_2.jpg" class="sp-image" alt="">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_1.jpg" alt="APPLEBUM" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">
-                        <?php /*<span>APPLEBUM</span>*/ ?>
                     </a>
                 </div>
                 <div class="sp-slide">
-                    <img src="<?php bloginfo('template_directory'); ?>-child/image/slide/tno019.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_299.jpg" alt="THE NEW ORDER MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">
-                        <?php /*<span>THE NEW ORDER MAGAZINE</span>*/ ?>
                     </a>
                 </div>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/10/th_171016_poco_278.jpg" alt="" class="sp-image">
+                    <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_280.jpg" alt="HER. MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/hermagazine/">
-                        <?php /*<span>HER. MAGAZINE</span>*/ ?>
                     </a>
                 </div>
                 <?php /*スライド2巡目 end*/ ?>
