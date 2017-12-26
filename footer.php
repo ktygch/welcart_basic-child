@@ -237,13 +237,24 @@
 		</div>
        
         <?php /*トップのみ、セール時表示テンプレート*/ ?>
+        <?php /*コメントアウト20171222 スライドショー組込へ変更
         <?php if(is_front_page()): ?>
             <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
             ?>
-                <?php /*SALEキャンペーン中に表示される*/ ?>
+                <?php /*SALEキャンペーン中に表示される
                 <?php get_template_part('sale'); ?>
             <?php endif; ?>
         <?php endif; ?>
+		*/ ?>
+		
+        <?php /* 作り途中のメルマガ登録フォーム　モーダル
+        <div class="modalMailBanner">
+            <div id="newsLetter">
+                <?php get_sidebar('home'); ?>
+            </div>
+            <div class="mailmodalclose">閉じる</div>
+        </div>		
+		*/ ?>
 		
 	</div><!-- #wrapper -->
 	
@@ -443,10 +454,11 @@
     <?php endif; ?>
     
     <?php /*トップのみ、セール時表示バナー挙動スクリプト*/ ?>
+    <?php /* コメントアウト20171222 スライドショー組込へ変更
 	<?php if(is_front_page()): ?>
         <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
         ?>
-            <?php /*SALEキャンペーン中に表示される*/ ?>
+            <?php /*SALEキャンペーン中に表示される
             <script>
                 $(".modalSaleBanner p").click(function () {
                     $(this).parent().fadeOut(200);
@@ -454,6 +466,7 @@
             </script>
         <?php endif; ?>
     <?php endif; ?>
+    */ ?>
     
 </body>
 </html>

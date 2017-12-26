@@ -149,7 +149,7 @@ get_header(); ?>
                         <?php wp_reset_query(); ?>
                     </div>
                     
-                    <h3 class="v_idx"><span>V.BACKUP</span></h3>
+                    <h3 class="v_idx"><span>MOBILE BATTERY CHARGER</span></h3>
                     <div class="flex_item">
                         <?php query_posts(array('category__and'=>array(14, 375))); ?>
                         <?php while (have_posts()) : the_post(); ?>
