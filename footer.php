@@ -1,11 +1,22 @@
+            <div class="container padding0_10">
+                <div class="alert holiday_alert">
+                    <h2>冬季休業のお知らせ</h2>
+                    <p>
+                         2017年12月29日(金)〜2018年1月4日(木)は業務をお休みさせていただきます。休業期間中のご注文商品の発送やお問い合わせ等は1月5日(金)より順次対応させていただきます。また、この間のご注文はお受け致しますが、受注確認メールの送信も2018年1月5日以降になりますのでご了承ください。
+                    </p>
+                </div>
+            </div>
+
             <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
             ?>
                 <?php /*SALEキャンペーン中に表示される*/ ?>
-                <div class="center top_sale_banner">
-                    <a href="<?php bloginfo('url'); ?>/category/item/sale/">
-                        <div class="inner">
-                        </div>
-                    </a>
+                <div class="container padding0_10">
+                    <div class="center top_sale_banner">
+                        <a href="<?php bloginfo('url'); ?>/category/item/sale/">
+                            <div class="inner">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             <?php endif; ?>
               

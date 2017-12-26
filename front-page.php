@@ -145,16 +145,6 @@
 		</div>
 
 		<div id="content" role="main">
-            <div class="container">
-                <div class="row">
-                    <div class="alert alert-info padding10" style="margin-top: 40px;">
-                        <h2 class="padding5 center">冬季休業のお知らせ</h2>
-                        <p class="padding10">
-                             2017年12月29日(金)〜2018年1月4日(木)は業務をお休みさせていただきます。休業期間中のご注文商品の発送やお問い合わせ等は1月5日(金)より順次対応させていただきます。また、この間のご注文はお受け致しますが、受注確認メールの送信も2018年1月5日以降になりますのでご了承ください。
-                        </p>
-                    </div>
-                </div>
-            </div>
 		</div><!-- #content -->
 		
 	</div><!-- #primary -->

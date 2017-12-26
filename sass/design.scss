@@ -1204,6 +1204,30 @@ footer{
     }
 }
 
+
+//盆暮れ休業アラート
+.holiday_alert{
+    max-width: 1050px;
+    margin: 0 auto 60px;
+    box-sizing: border-box;
+    padding: 15px 10px 10px;
+    border: {
+        width: 3px;
+        style: solid;
+        color: #000;
+        radius: 0;
+    }
+    h2{
+        padding: 0;
+        text-align: center;
+    }
+    p{
+        padding: 10px 10px 0;
+        line-height: 1.6em;
+    }
+}
+
+
 //基本レイアウト end
 //----------------------------------------------------------
 //----------------------------------------------------------
@@ -4653,7 +4677,9 @@ ul.ucart_search_body.ucart_widget_body{
 }
 
 .top_sale_banner{
-    width: 75%;
+    //width: 75%;
+    width: 100%;
+    max-width: 1050px;
     height: 310px;
     box-sizing: border-box;
     padding: 20px;
@@ -4677,7 +4703,7 @@ ul.ucart_search_body.ucart_widget_body{
         left: 0;
     }
     @media (max-width: 767px){
-        width: 95%;
+        //width: 95%;
         padding: 15px;
     }
     a{
