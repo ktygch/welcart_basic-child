@@ -230,7 +230,7 @@
                 <div id="sns">
                     <ul>
                         <li><a href="https://www.facebook.com/PO-COjp-1208605745854667/" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/po_co_jp/" target="_blank">instagram</a></li>
+                        <li><a href="https://www.instagram.com/pocostore/" target="_blank">instagram</a></li>
                         <li><a href="https://twitter.com/POCO_STORE" target="_blank">Twitter</a></li>
                     </ul>
                 </div>
