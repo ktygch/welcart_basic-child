@@ -1,3 +1,4 @@
+            <?php /*
             <div class="container padding0_10">
                 <div class="alert holiday_alert">
                     <h2>冬季休業のお知らせ</h2>
@@ -6,6 +7,7 @@
                     </p>
                 </div>
             </div>
+            */ ?>
 
             <?php $options=get_option('usces'); if('Promotionsale'==$options['display_mode']):
             ?>

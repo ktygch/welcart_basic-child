@@ -3671,7 +3671,7 @@ ul.ucart_search_body.ucart_widget_body {
 .slide_sale {
   position: relative;
   background-color: rgba(255, 255, 255, 0.1); }
-  .slide_sale.winter2017:before, .slide_sale.winter2017:after {
+  .slide_sale.winter2018:before, .slide_sale.winter2018:after {
     content: "";
     display: block;
     position: absolute;
@@ -3680,29 +3680,28 @@ ul.ucart_search_body.ucart_widget_body {
     right: 0;
     bottom: 0;
     left: 0; }
-  .slide_sale.winter2017:before {
+  .slide_sale.winter2018:before {
     width: 96%;
-    height: 95%;
-    background-color: rgba(0, 49, 78, 0.3); }
+    height: 95%; }
     @media (max-width: 767px) {
-      .slide_sale.winter2017:before {
+      .slide_sale.winter2018:before {
         width: 92%; } }
     @media (min-width: 1200px) {
-      .slide_sale.winter2017:before {
+      .slide_sale.winter2018:before {
         width: 98%; } }
-  .slide_sale.winter2017:after {
+  .slide_sale.winter2018:after {
     width: 50%;
     height: 70%;
-    background-image: url(../image/sale/top_sale_winter2017_4.svg);
+    background-image: url(../image/sale/top_sale_2018winter.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain; }
     @media (max-width: 767px) {
-      .slide_sale.winter2017:after {
+      .slide_sale.winter2018:after {
         width: 85%;
         height: 95%; } }
     @media (min-width: 1200px) {
-      .slide_sale.winter2017:after {
+      .slide_sale.winter2018:after {
         width: 70%;
         height: 70%; } }
 
@@ -3875,7 +3874,7 @@ ul.ucart_search_body.ucart_widget_body {
           box-sizing: border-box;
   padding: 20px;
   margin: 0 auto 60px;
-  background-image: url(../image/sale/winter_wreath.jpg);
+  background-image: url(../image/sale/top_sale_banner_2018.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3896,7 +3895,6 @@ ul.ucart_search_body.ucart_widget_body {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 49, 78, 0.45);
     position: relative;
     z-index: 2; }
     .top_sale_banner a .inner {
@@ -3909,7 +3907,7 @@ ul.ucart_search_body.ucart_widget_body {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url(../image/sale/top_sale_winter2017_4.svg);
+      background-image: url(../image/sale/top_sale_2018winter.svg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;

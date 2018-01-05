@@ -4,8 +4,8 @@
 			<div class="sp-slides">
                 <?php /*特集記事*/ ?>
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2017/12/winter_wreath.jpg" alt="WINTER SALE 2017" class="sp-image">
-                    <a href="<?php bloginfo('url'); ?>/category/item/sale/" class="slide_sale winter2017">
+                    <img src="https://po-co.jp/wp-content/uploads/2018/01/top_sale_banner_2018.jpg" alt="WINTER SALE 2018" class="sp-image">
+                    <a href="<?php bloginfo('url'); ?>/category/item/sale/" class="slide_sale winter2018">
                     </a>
                 </div>
                 
