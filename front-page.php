@@ -2,12 +2,13 @@
 	<div class="sliderWrap">
 		<div id="slider1" class="slider-pro">
 			<div class="sp-slides">
-                <?php /*特集記事*/ ?>
+                <?php /*特集記事
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2018/01/top_sale_banner_2018.jpg" alt="WINTER SALE 2018" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/sale/" class="slide_sale winter2018">
                     </a>
                 </div>
+                */ ?>
                 
 			    <?php /*スライド1巡目*/ ?>
                 <div class="sp-slide">
