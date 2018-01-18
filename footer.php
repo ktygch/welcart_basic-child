@@ -53,6 +53,7 @@
                             </span>
                         </a>
                     </li>
+                    <?php /*
                     <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/" class="applebum">
                             <h3><span>APPLEBUM</span></h3>
@@ -60,6 +61,7 @@
                             </span>
                         </a>
                     </li>
+                    */ ?>
                     <li class="each_brand">
                         <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/" class="tno">
                             <h3><span>THE NEW ORDER MAGAZINE</span></h3>

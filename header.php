@@ -147,6 +147,9 @@
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">ALL</a>
                                         </li>
                                         <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/iphone_x_vianel/">IPHONE X CASES</a>
+                                        </li>
+                                        <li>
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">OLIVIA PALERMO</a>
                                         </li>
                                         <li>
@@ -163,9 +166,11 @@
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a>
                                 </li>
+                                <?php /*
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a>
                                 </li>
+                                */ ?>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
                                 </li>
@@ -226,6 +231,9 @@
                                 <!-- 第2階層 -->
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/accessories/">ALL</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_x/">IPHONE X CASE</a>
                                 </li>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>
@@ -291,6 +299,9 @@
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">ALL</a>
                                         </li>
                                         <li>
+                                            <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/iphone_x_vianel/">IPHONE X CASES</a>
+                                        </li>
+                                        <li>
                                             <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/olivia_palermo/">OLIVIA PALERMO</a>
                                         </li>
                                         <li>
@@ -308,9 +319,11 @@
                             <div class="panel-group">
                                 <a href="<?php bloginfo('url'); ?>/category/item/brand/camar/">CAMAR</a>
                             </div>
+                            <?php /*
                             <div class="panel-group">
                                 <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">APPLEBUM</a>
                             </div>
+                            */ ?>
                             <div class="panel-group">
                                 <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">THE NEW ORDER MAGAZINE</a>
                             </div>
@@ -365,6 +378,9 @@
                             <ul>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/accessories/">ALL</a>
+                                </li>
+                                <li>
+                                    <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone_x/">IPHONE X CASE</a>
                                 </li>
                                 <li>
                                     <a href="<?php bloginfo('url'); ?>/category/item/accessories/iphone/">IPHONE CASE</a>

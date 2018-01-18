@@ -4,8 +4,8 @@
 			<div class="sp-slides">
                 <?php /*特集記事
                 <div class="sp-slide">
-                    <img src="https://po-co.jp/wp-content/uploads/2018/01/top_sale_banner_2018.jpg" alt="WINTER SALE 2018" class="sp-image">
-                    <a href="<?php bloginfo('url'); ?>/category/item/sale/" class="slide_sale winter2018">
+                    <img src="https://po-co.jp/wp-content/uploads/2018/01/th_iphonex_2000_1000.jpg" alt="WINTER SALE 2018" class="sp-image">
+                    <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/iphone_x_vianel/">
                     </a>
                 </div>
                 */ ?>
@@ -35,11 +35,13 @@
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
                     </a>
                 </div>
+                <?php /*
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_2.jpg" alt="APPLEBUM" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">
                     </a>
                 </div>
+                */ ?>
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_301.jpg" alt="THE NEW ORDER MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">
@@ -73,11 +75,13 @@
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/vianel/">
                     </a>
 				</div>
+                <?php /*
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2017/10/applebum_1.jpg" alt="APPLEBUM" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/applebum/">
                     </a>
                 </div>
+                */ ?>
                 <div class="sp-slide">
                     <img src="https://po-co.jp/wp-content/uploads/2017/12/th_171016_poco_299.jpg" alt="THE NEW ORDER MAGAZINE" class="sp-image">
                     <a href="<?php bloginfo('url'); ?>/category/item/brand/thenewordermagazine/">
