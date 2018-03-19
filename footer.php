@@ -444,7 +444,7 @@
 	<?php endif; ?>
 	
     <?php /*OLIVIAデビューTOPIC記事 本番 4984 テスト 1357*/ ?>
-    <?php if(is_single('4984')): ?>
+    <?php if(is_single('1357')): ?>
         <script>
             $(document).ready(function(){
                 //各ブランドトップ　スライド　１頁目のみ読み込み
@@ -464,7 +464,7 @@
     <?php endif; ?>
 	
 	<?php /*↓本番カテIDは17,テストは20*/ ?>
-    <?php if(in_category('17')): ?>
+    <?php if(in_category('20')): ?>
         <script src="<?php bloginfo('template_directory'); ?>-child/js/min/article.js"></script>
     <?php endif; ?>
     

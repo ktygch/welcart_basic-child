@@ -147,6 +147,7 @@ $(function(){
         }
     });
     
+    /*
     $('.accordion').on('click', 'li', function(e){
         //e.preventDefault();
         e.stopPropagation();
@@ -219,6 +220,7 @@ $(function(){
             })
         }
     });
+    */
 });
 
 /*
